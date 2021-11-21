@@ -104,25 +104,25 @@
       <!-- end header section -->
     </div>
 
-    <!-- shop section -->
+    <!-- shop best seller section -->
 
     <section class="shop_section layout_padding">
       <div class="container">
         <div class="heading_container heading_center">
-          <h2>Latest Watches</h2>
+          <h2>Best Seller</h2>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="box">
               <a href="">
                 <div class="img-box">
-                  <img src="images/w1.png" alt="" />
+                  <img src="images/bs1.jpg" alt="" />
                 </div>
-                <div class="detail-box">
-                  <h6>Smartwatch</h6>
+                <div class="detail-box row">
+                  <h6>Laptop Acer Aspire 3 A315 56 37DV</h6>
                   <h6>
                     Price:
-                    <span> $300 </span>
+                    <span> $529 </span>
                   </h6>
                 </div>
                 <div class="new">
@@ -135,13 +135,13 @@
             <div class="box">
               <a href="">
                 <div class="img-box">
-                  <img src="images/w2.png" alt="" />
+                  <img src="images/bs2.jpg" alt="" />
                 </div>
-                <div class="detail-box">
-                  <h6>Smartwatch</h6>
+                <div class="detail-box row">
+                  <h6>Laptop Asus Vivobook A415EA EB360T</h6>
                   <h6>
                     Price:
-                    <span> $125 </span>
+                    <span> $772 </span>
                   </h6>
                 </div>
                 <div class="new">
@@ -154,13 +154,13 @@
             <div class="box">
               <a href="">
                 <div class="img-box">
-                  <img src="images/w3.png" alt="" />
+                  <img src="images/bs3.jpg" alt="" />
                 </div>
-                <div class="detail-box">
-                  <h6>Smartwatch</h6>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming Acer Nitro 5 AN515 57 56S5</h6>
                   <h6>
                     Price:
-                    <span> $110 </span>
+                    <span> $970 </span>
                   </h6>
                 </div>
                 <div class="new">
@@ -173,13 +173,13 @@
             <div class="box">
               <a href="">
                 <div class="img-box">
-                  <img src="images/w4.png" alt="" />
+                  <img src="images/bs4.jpg" alt="" />
                 </div>
-                <div class="detail-box">
-                  <h6>Smartwatch</h6>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming Asus ROG Strix G15 G513IC HN002T</h6>
                   <h6>
                     Price:
-                    <span> $145 </span>
+                    <span> $1191 </span>
                   </h6>
                 </div>
                 <div class="new">
@@ -192,13 +192,13 @@
             <div class="box">
               <a href="">
                 <div class="img-box">
-                  <img src="images/w5.png" alt="" />
+                  <img src="images/bs5.jpg" alt="" />
                 </div>
-                <div class="detail-box">
-                  <h6>Smartwatch</h6>
+                <div class="detail-box row">
+                  <h6>Laptop ASUS TUF Gaming F15 FX506LH HN002T</h6>
                   <h6>
                     Price:
-                    <span> $195 </span>
+                    <span> $948 </span>
                   </h6>
                 </div>
                 <div class="new">
@@ -211,13 +211,13 @@
             <div class="box">
               <a href="">
                 <div class="img-box">
-                  <img src="images/w6.png" alt="" />
+                  <img src="images/bs6.jpg" alt="" />
                 </div>
-                <div class="detail-box">
-                  <h6>Smartwatch</h6>
+                <div class="detail-box row">
+                  <h6>Laptop MSI Modern 15 A10MU 667VN</h6>
                   <h6>
                     Price:
-                    <span> $170 </span>
+                    <span> $816 </span>
                   </h6>
                 </div>
                 <div class="new">
@@ -230,13 +230,161 @@
             <div class="box">
               <a href="">
                 <div class="img-box">
-                  <img src="images/w1.png" alt="" />
+                  <img src="images/bs7.jpg" alt="" />
                 </div>
-                <div class="detail-box">
-                  <h6>Smartwatch</h6>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming MSI Bravo 15 B5DD 276VN</h6>
                   <h6>
                     Price:
-                    <span> $230 </span>
+                    <span> $970 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- end shop best seller section -->
+
+     <!-- shop gaming section -->
+
+     <section class="shop_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Laptop Gaming</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/gm1.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop ASUS TUF Gaming F15 FX506LH HN002T</h6>
+                  <h6>
+                    Price:
+                    <span> $948 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> Featured </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/gm2.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming Acer Nitro 5 AN515 45 R3SM</h6>
+                  <h6>
+                    Price:
+                    <span> $970 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/gm3.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming MSI Bravo 15 B5DD 276VN</h6>
+                  <h6>
+                    Price:
+                    <span> $970 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/gm4.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming Acer Nitro 5 AN515 57 56S5</h6>
+                  <h6>
+                    Price:
+                    <span> $970 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/gm5.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming MSI Katana GF66 11UC 676VN</h6>
+                  <h6>
+                    Price:
+                    <span> $1103 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/gm6.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Gaming Asus ROG Strix G15 G513IC HN002T</h6>
+                  <h6>
+                    Price:
+                    <span> $1191 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/gm7.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop gaming Lenovo Legion 5 15ACH6A 82NW003BVN</h6>
+                  <h6>
+                    Price:
+                    <span> $1544 </span>
                   </h6>
                 </div>
                 <div class="new">
@@ -252,7 +400,159 @@
       </div>
     </section>
 
-    <!-- end shop section -->
+    <!-- end shop gaming section -->
+
+    <!-- shop ultrabook section -->
+
+    <section class="shop_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Laptop Ultrabook</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/ul1.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Acer Aspire 3 A315 56 502X</h6>
+                  <h6>
+                    Price:
+                    <span> $608 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> Featured </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/ul2.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop MSI Modern 15 A10MU 667VN</h6>
+                  <h6>
+                    Price:
+                    <span> $816 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/ul3.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Asus Vivobook M513UA L1221T</h6>
+                  <h6>
+                    Price:
+                    <span> $829 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/ul4.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Acer Aspire 5 A514 54 540F</h6>
+                  <h6>
+                    Price:
+                    <span> $807 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/ul5.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop MSI Modern 14 B11SBU 668VN</h6>
+                  <h6>
+                    Price:
+                    <span> $992 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/ul6.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop HP Envy 13 BA1535TU 4U6M4PA</h6>
+                  <h6>
+                    Price:
+                    <span> $1279 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="images/ul7.jpg" alt="" />
+                </div>
+                <div class="detail-box row">
+                  <h6>Laptop Dell XPS 13 9310</h6>
+                  <h6>
+                    Price:
+                    <span> $1323 </span>
+                  </h6>
+                </div>
+                <div class="new">
+                  <span> New </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href=""> View All </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- end shop ultrabook section -->
+
+
 
     <!-- footer section -->
     <footer class="footer_section">
