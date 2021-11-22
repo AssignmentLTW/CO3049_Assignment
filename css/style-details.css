@@ -1,0 +1,62 @@
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
+
+.row {
+    margin: 50px auto;
+    background-color: white;
+}
+
+.box-large {
+    padding: 10px 10px;
+}
+
+
+/*Card*/
+
+.title {
+    padding: 0px;
+}
+
+.box-bottom {
+    margin-top: 10px;
+    display: flex;
+}
+
+.box-bottom img {
+    width: 100%;
+}
+
+
+/*Summary*/
+
+.summary {
+    text-align: center;
+}
+
+.summary p {
+    text-align: justify;
+}
+
+.summary h3 {
+    text-align: left;
+    color: blue;
+    font-size: 30px;
+}
+
+.summary h2 {
+    font-weight: normal;
+    color: red;
+}
+
+
+/*Details*/
+
+.detail {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.25em;
+}
