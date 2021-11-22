@@ -91,61 +91,171 @@ session_start();
     </div>
 
     <!-- details section -->
-    <section class="about_section layout_padding">
+    <section class="detail_section layout_padding">
         <div class="container">
+            <div class="title">
+                <p><a href="#">Watches</a> &gt; <a href="#">Laptop</a> &gt; <a href="#">Detail</a></p>
+            </div>
             <div class="row">
-                <div class="col-12">
-                    <p><a href="#">Watches</a> &gt; <a href="#">Details</a> &gt; <a href="#">Laptop Acer</a></p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="box-large">
-                        <div class="box-top">
-                            <img id="big_img" class="img-fluid" src="images/sp01-detail01.jpg" alt="Product">
-                        </div>
-                        <div class="box-bottom">
-                            <div>
+
+                <div class=" box-large col-md-6 ">
+
+                    <div class="box-top">
+                        <img id="big_img" class="img-fluid" src="images/sp01-detail00.jpg" alt="Product">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="row">
+                            <div class="col">
                                 <a href="#" onclick="changeImage(1)"><img src="images/sp01-detail01.jpg"
                                         alt="Product"></a>
                             </div>
-                            <div>
+                            <div class="col">
                                 <a href="#" onclick="changeImage(2)"><img src="images/sp01-detail02.jpg"
                                         alt="Product"></a>
                             </div>
-                            <div>
+                            <div class="col">
                                 <a href="#" onclick="changeImage(3)"><img src="images/sp01-detail03.jpg"
                                         alt="Product"></a>
                             </div>
-                            <div>
+                            <div class="col">
                                 <a href="#" onclick="changeImage(4)"><img src="images/sp01-detail04.jpg"
                                         alt="Product"></a>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 summary">
-                            <h2>Laptop Acer Aspire 3 A315 56 37DVLaptop Acer</h2>
-                            <p>Nhà sản xuất : ACER</p><br>
-
-                            <p> Xuất xứ : Chính hãng</p><br>
-
-                            <p> Bảo hành : 12 Tháng</p><br>
-
-                            <p> Tình trạng : Mới 100%</p><br>
-                            <h3>Price: 11,990,000₫ </h3>
-                            <button class="btn btn-outline-primary btn-block" type="button">Thêm vào giỏ hàng</button>
-                            <button class="btn btn-success btn-block" type="button">Mua ngay</button>
-                        </div>
-                        <div class="col-12" style="margin-top: 25px;">
-                            <h3>Mô tả</h3>
-                            <ul>
-                                <li>RAM: </li>
-                                <li>CPU: </li>
-                                <li>Ổ cứng: </li>
-                                <li>Card đồ họa: </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+                <div class="summary col-md-6 ">
+
+                    <h2>Laptop Acer Aspire 3 A315 56 37DV</h2>
+                    <p>Nhà sản xuất : ACER</p>
+                    <p>Xuất xứ : Chính hãng</p>
+                    <p>Bảo hành : 12 Tháng</p>
+                    <p>Tình trạng : Mới 100%</p>
+                    <h3>Giá: 11,990,000₫</h3>
+                    <button class="btn btn-outline-primary btn-block" type="button">Thêm vào giỏ hàng</button>
+                    <button class="btn btn-success btn-block" type="button">Mua ngay</button>
+                </div>
+
+                <div class=" detail col">
+                    <h2>Mô tả</h2>
+                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                        <!-- Card form tabs -->
+                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                            <li class="nav-item">
+                                <a data-toggle="pill" href="#info-product" class="nav-link active "> Thông tin sản phẩm
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="pill" href="#outstanding" class="nav-link "> Đặc điểm nổi bật </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="pill" href="#quanranting" class="nav-link "> Thông tin bảo hành </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="info-product" class="tab-pane fade show active pt-3">
+                            <h3>Thông số kĩ thuật</h3>
+                            <table>
+                                <tr>
+                                    <th>Thương hiệu</th>
+                                    <th>Acer</th>
+                                </tr>
+                                <tr>
+                                    <th>Bảo hành</th>
+                                    <th>12 tháng</th>
+                                </tr>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Acer Aspire 3 A315 56 37DV</th>
+                                </tr>
+                                <tr>
+                                    <th>CPU</th>
+                                    <th>Intel Core i3-1005G1 1.2GHz up to 3.4GHz 4MB</th>
+                                </tr>
+                                <tr>
+                                    <th>RAM</th>
+                                    <th>4GB DDR4 2400MHz Onboard ( 1x onboard 4GB + 1x SO-DIMM socket, up to 12GB SDRAM)
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Ổ cứng</th>
+                                    <th>256GB SSD M.2 PCIE, 1x slot SATA3 2.5"</th>
+                                </tr>
+                                <tr>
+                                    <th>Card đồ họa</th>
+                                    <th>Intel UHD Graphics</th>
+                                </tr>
+                                <tr>
+                                    <th>Màn hình</th>
+                                    <th>15.6" FHD (1920 x 1080) Acer ComfyView LCD, Anti-Glare</th>
+                                </tr>
+                                <tr>
+                                    <th>Cổng giao tiếp</th>
+                                    <th> 1x USB 3.1, 2x USB 2.0, HDMI, RJ-45</th>
+                                </tr>
+                                <tr>
+                                    <th>Ổ quang</th>
+                                    <th>None</th>
+                                </tr>
+                                <tr>
+                                    <th>Audio</th>
+                                    <th>Realtek High Definition</th>
+                                </tr>
+                                <tr>
+                                    <th>Đọc thẻ nhớ</th>
+                                    <th>None</th>
+                                </tr>
+                                <tr>
+                                    <th>Chuẩn LAN</th>
+                                    <th>10/100/1000 Mbps</th>
+                                </tr>
+                                <tr>
+                                    <th>Chuẩn WIFI</th>
+                                    <th>802.11 ac</th>
+                                </tr>
+                                <tr>
+                                    <th>Bluetooth</th>
+                                    <th>v4.2</th>
+                                </tr>
+                                <tr>
+                                    <th>Webcam</th>
+                                    <th>HD Webcam</th>
+                                </tr>
+                                <tr>
+                                    <th>Hệ điều hành</th>
+                                    <th>Windows 10 Home</th>
+                                </tr>
+                                <tr>
+                                    <th>Pin</th>
+                                    <th>3 Cell 36.7 Whr</th>
+                                </tr>
+                                <tr>
+                                    <th>Trọng lượng</th>
+                                    <th>1.7 kg</th>
+                                </tr>
+                                <tr>
+                                    <th>Màu sắc</th>
+                                    <th>Shale Black</th>
+                                </tr>
+                                <tr>
+                                    <th>Kích thước</th>
+                                    <th>363 x 247.5 x 19.9 (mm)</th>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div id="outstanding" class="tab-pane fade pt-3">
+                            <!-- Chưa có thông tin -->
+                        </div>
+                        <div id="quanranting" class="tab-pane fade pt-3">
+                            <!-- Chưa có thông tin -->
+                        </div>
+
+                    </div>
+                </div>
+
     </section>
 
     <!-- end details section -->
@@ -222,7 +332,8 @@ session_start();
         </div>
     </footer>
     <!-- footer section -->
-
+    <!-- Chang images details -->
+    <script src="js/changeimg.js"></script>
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- popper js -->
