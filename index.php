@@ -91,18 +91,18 @@
                 </li>
               </ul>
               <div class="user_option-box">
-                <?php 
-                  if (isset($_SESSION["username"])) { 
-                    echo $_SESSION["username"]; 
-                    echo  '<a href="./login/logout.php">
-                            <i class="fa fa-sign-out"></i>
-                          </a>';
-                  }
-                   
-                  else
-                    echo '<a href="./login/login.php">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </a>'
+                <?php
+                if (isset($_SESSION["username"])) {
+                  echo '<a href="./login/users_info.php">';
+                  echo $_SESSION["username"];
+                  echo'</a>';
+                  echo  '<a href="./login/logout.php">
+                              <i class="fa fa-sign-out"></i>
+                            </a>';
+                } else
+                  echo '<a href="./login/login.php">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </a>' ;
                 ?>
                
                 
