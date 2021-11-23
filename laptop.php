@@ -33,7 +33,7 @@ session_start();
 </head>
 
 <body class="sub_page">
-    <div class="hero_area">
+<div class="hero_area">
         <!-- header section strats -->
         <header class="header_section">
             <div class="container-fluid">
@@ -54,8 +54,8 @@ session_start();
                                 <a class="nav-link" href="index.php">Home </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="watches.php">
-                                    Watches <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="laptop.php">
+                                    Laptops <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.php"> About </a>
@@ -538,18 +538,17 @@ session_start();
 
     <!-- end shop ultrabook section -->
 
-
-
-    <!-- footer section -->
-    <footer class="footer_section">
+ <!-- footer section -->
+ <footer class="footer_section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-3 footer-col">
                     <div class="footer_detail">
                         <h4>About</h4>
                         <p>
-                            Necessary, making this the first true generator on the Internet.
-                            It uses a dictionary of over 200 Latin words, combined with
+                            Đơn vị cung cấp laptop hàng đầu Việt Nam bảo hành chính hãng.
+                            Mua online nhận ngay nhiều ưu đãi hấp dẫn.
+                            
                         </p>
                         <div class="footer_social">
                             <a href="">
@@ -573,11 +572,11 @@ session_start();
                         <div class="contact_link_box">
                             <a href="">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <span> Location </span>
+                                <span> Thu Duc, Ho Chi Minh City </span>
                             </a>
                             <a href="">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span> Call +01 1234567890 </span>
+                                <span> Call +84 123456789 </span>
                             </a>
                             <a href="">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -612,6 +611,8 @@ session_start();
         </div>
     </footer>
     <!-- footer section -->
+
+    
 
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>

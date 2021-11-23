@@ -81,7 +81,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="watches.php"> Watches </a>
+                  <a class="nav-link" href="laptop.php"> Laptops </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.php"> About </a>
