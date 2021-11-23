@@ -43,7 +43,7 @@
       <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <span> Timups </span>
             </a>
 
@@ -62,18 +62,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">Home </a>
+                  <a class="nav-link" href="index.php">Trang chủ </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="watches.php"> Watches </a>
+                  <a class="nav-link" href="laptop.php"> Laptops </a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="about.php">
-                    About <span class="sr-only">(current)</span>
+                    Giới thiệu <span class="sr-only">(current)</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Contact Us</a>
+                  <a class="nav-link" href="contact.php">Liện hệ</a>
                 </li>
               </ul>
               <div class="user_option-box">
@@ -111,24 +111,50 @@
         <div class="row">
           <div class="col-md-6 col-lg-5">
             <div class="img-box">
-              <img src="images/about-img.png" alt="" />
+              <img src="images/about.png" alt="" />
             </div>
           </div>
           <div class="col-md-6 col-lg-7">
             <div class="detail-box">
               <div class="heading_container">
-                <h2>About Us</h2>
+                <h2>Công ty LLNT</h2>
               </div>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All
+              Dù chỉ mới được thành lập nhưng chúng tôi luôn đi đầu trong lĩnh vực cung cấp laptop cho người tiêu dùng nói chung và sinh viên nói riêng. Luôn là “Đối tác vàng” của các hãng máy tính Asus, Acer, Dell, HP, … Chúng tôi luôn mang đến khách hàng những sản phẩm chất lượng, giá cả cạnh tranh và dịch vụ ưu việt.
               </p>
-              <a href=""> Read More </a>
             </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="padding-top: 50px;">
+          <div class="col-md-6 col-lg-6">
+            <div class="detail-box">
+                <div class="heading_container">
+                  <h2>Lợi thế cạnh tranh</h2>
+                </div>
+                <p>
+                - Là đối tác vàng của các hãng máy tính Acer, Asus, Dell, HP, …, cam kết sản phẩm chính hãng, giá cả phù hợp với sinh viên và dịch vụ ưu việt. Các hãng luôn có chính sách bảo hành tận nơi hoặc giao nhận tận nơi trên toàn quốc.
+                </p>
+                <p>- Trung tâm bảo hành cam kết uy tín và trình độ chuyên môn cao.</p>
+                <p>- Showroom trưng bày rộng rãi.</p>
+                <p>- Khả năng cung cấp số lượng máy lớn với cấu hình chuyên biệt.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>Thị trường mục tiêu</h2>
+              </div>
+              <p>
+              - Phát triển hệ thống đại lý kinh doanh máy tính toàn quốc.
+              </p>
+              <p>- Phát triển khách hàng khu công nghiệp, doanh nghiệp toàn quốc.</p>
+              <p>- Cá nhân cần những máy tính chuyên biệt theo yêu cầu: mỏng nhẹ, cao cấp, cấu hình mạnh.</p>
+
+            </div>
+            
           </div>
         </div>
       </div>
@@ -137,15 +163,14 @@
     <!-- end about section -->
 
     <!-- footer section -->
-    <footer class="footer_section">
+    <footer class="footer_section" >
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3 footer-col">
+          <div class="col-md-6 col-lg-4 footer-col">
             <div class="footer_detail">
-              <h4>About</h4>
+              <h4>Giới thiệu</h4>
               <p>
-                Necessary, making this the first true generator on the Internet.
-                It uses a dictionary of over 200 Latin words, combined with
+              Đơn vị cung cấp laptop hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ngay nhiều ưu đãi hấp dẫn.
               </p>
               <div class="footer_social">
                 <a href="">
@@ -163,17 +188,17 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 footer-col">
+          <div class="col-md-6 col-lg-4 footer-col">
             <div class="footer_contact">
-              <h4>Reach at..</h4>
+              <h4>Liên hệ</h4>
               <div class="contact_link_box">
                 <a href="">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span> Location </span>
+                  <span> Thu Duc, Ho Chi Minh City </span>
                 </a>
                 <a href="">
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span> Call +01 1234567890 </span>
+                  <span> Call +84 123456789 </span>
                 </a>
                 <a href="">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -182,16 +207,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 footer-col">
-            <div class="footer_contact">
-              <h4>Subscribe</h4>
-              <form action="#">
-                <input type="text" placeholder="Enter email" />
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 footer-col">
+          
+          <div class="col-md-6 col-lg-4 footer-col">
             <div class="map_container">
               <div class="map">
                 <div id="googleMap"></div>
@@ -199,12 +216,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-info">
-          <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="https://html.design/">Free Html Templates</a>
-          </p>
-        </div>
+        
       </div>
     </footer>
     <!-- footer section -->

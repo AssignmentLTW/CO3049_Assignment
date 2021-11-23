@@ -38,7 +38,7 @@ session_start();
         <header class="header_section">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <span> Timups </span>
                     </a>
 
@@ -51,17 +51,17 @@ session_start();
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php">Home </a>
+                                <a class="nav-link" href="index.php">Trang chủ </a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="laptop.php">
                                     Laptops <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.php"> About </a>
+                                <a class="nav-link" href="about.php"> Giới thiệu </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.php">Contact Us</a>
+                                <a class="nav-link" href="contact.php">Liên hệ</a>
                             </li>
                         </ul>
                         <div class="user_option-box">
@@ -95,7 +95,7 @@ session_start();
     <section class="shop_section layout_padding">
         <div class="container">
             <div class="heading_container heading_center">
-                <h2>Best Seller</h2>
+                <h2>Bán chạy nhất</h2>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -380,9 +380,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="btn-box">
-                <a href=""> View All </a>
-            </div>
+            
         </div>
     </section>
 
@@ -530,9 +528,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="btn-box">
-                <a href=""> View All </a>
-            </div>
+            
         </div>
     </section>
 

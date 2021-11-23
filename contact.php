@@ -42,7 +42,7 @@
       <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <span> Timups </span>
             </a>
 
@@ -61,17 +61,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">Home </a>
+                  <a class="nav-link" href="index.php">Trang chủ </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="watches.php"> Watches </a>
+                  <a class="nav-link" href="watches.php"> Laptops </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.php"> About </a>
+                  <a class="nav-link" href="about.php"> Giới thiệu </a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="contact.php"
-                    >Contact Us <span class="sr-only">(current)</span>
+                    >Liên hệ <span class="sr-only">(current)</span>
                   </a>
                 </li>
               </ul>
@@ -111,34 +111,34 @@
           <div class="col-md-6">
             <div class="form_container">
               <div class="heading_container">
-                <h2>Contact Us</h2>
+                <h2>Liên hệ với chúng tôi</h2>
               </div>
               <form action="">
                 <div>
-                  <input type="text" placeholder="Full Name " />
+                  <input type="text" placeholder="Họ tên " />
                 </div>
                 <div>
                   <input type="email" placeholder="Email" />
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone number" />
+                  <input type="text" placeholder="Số điện thoại" />
                 </div>
                 <div>
                   <input
                     type="text"
                     class="message-box"
-                    placeholder="Message"
+                    placeholder="Bình luận"
                   />
                 </div>
-                <div class="d-flex">
-                  <button>SEND</button>
+                <div class="d-flex" style="padding-bottom: 30px">
+                  <button>GỬI</button>
                 </div>
               </form>
             </div>
           </div>
           <div class="col-md-6">
             <div class="img-box">
-              <img src="images/contact-img.jpg" alt="" />
+              <img src="images/contact.jpg" alt="" />
             </div>
           </div>
         </div>
