@@ -15,7 +15,7 @@ session_start();
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Timups</title>
+    <title>Teamups</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -39,7 +39,7 @@ session_start();
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container">
                     <a class="navbar-brand" href="index.php">
-                        <span> Timups </span>
+                        <span> Teamups </span>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -51,17 +51,17 @@ session_start();
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php">Home </a>
+                                <a class="nav-link" href="index.php">Trang chủ </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="watches.php"> Watches </a>
+                                <a class="nav-link" href="watches.php"> Laptops </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.php"> About </a>
+                                <a class="nav-link" href="about.php"> Giới thiệu </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="contact.php">Contact Us <span class="sr-only">(current)</span>
-                                </a>
+                                <a class="nav-link" href="contact.php">Liên hệ </a>
+                                
                             </li>
                         </ul>
                         <div class="user_option-box">
@@ -94,7 +94,7 @@ session_start();
     <section class="detail_section layout_padding">
         <div class="container">
             <div class="title">
-                <p><a href="#">Watches</a> &gt; <a href="#">Laptop</a> &gt; <a href="#">Detail</a></p>
+                <p><a href="#">Laptops</a> &gt; <a href="#">Details</a> &gt; <a href="#">Laptop Acer Aspire 3 A315 56 37DV</a></p>
             </div>
             <div class="row">
 
@@ -262,74 +262,60 @@ session_start();
 
     <!-- footer section -->
     <footer class="footer_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 footer-col">
-                    <div class="footer_detail">
-                        <h4>About</h4>
-                        <p>
-                            Necessary, making this the first true generator on the Internet. It uses a dictionary of
-                            over 200 Latin words, combined with
-                        </p>
-                        <div class="footer_social">
-                            <a href="">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 footer-col">
-                    <div class="footer_contact">
-                        <h4>Reach at..</h4>
-                        <div class="contact_link_box">
-                            <a href="">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <span> Location </span>
-                            </a>
-                            <a href="">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span> Call +01 1234567890 </span>
-                            </a>
-                            <a href="">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <span> demo@gmail.com </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 footer-col">
-                    <div class="footer_contact">
-                        <h4>Subscribe</h4>
-                        <form action="#">
-                            <input type="text" placeholder="Enter email" />
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 footer-col">
-                    <div class="map_container">
-                        <div class="map">
-                            <div id="googleMap"></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 footer-col">
+            <div class="footer_detail">
+              <h4>Giới thiệu</h4>
+              <p>
+              Đơn vị cung cấp laptop hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ngay nhiều ưu đãi hấp dẫn.
+              </p>
+              <div class="footer_social">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
-            <div class="footer-info">
-                <p>
-                    &copy; <span id="displayYear"></span> All Rights Reserved By
-                    <a href="https://html.design/">Free Html Templates</a>
-                </p>
+          </div>
+          <div class="col-md-6 col-lg-4 footer-col">
+            <div class="footer_contact">
+              <h4>Liên hệ</h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> Thu Duc, Ho Chi Minh City </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> Call +84 123456789 </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> demo@gmail.com </span>
+                </a>
+              </div>
             </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4 footer-col">
+            <div class="map_container">
+              <div class="map">
+                <div id="googleMap"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        
+      </div>
     </footer>
     <!-- footer section -->
     <!-- Chang images details -->

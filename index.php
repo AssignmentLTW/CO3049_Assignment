@@ -17,7 +17,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Timups</title>
+    <title>Teamups</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -58,7 +58,7 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.php">
-              <span> Timups </span>
+              <span> Teamups </span>
             </a>
 
             <button

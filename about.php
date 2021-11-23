@@ -17,7 +17,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Timups</title>
+    <title>Teamups</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -44,7 +44,7 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.php">
-              <span> Timups </span>
+              <span> Teamups </span>
             </a>
 
             <button
@@ -117,7 +117,7 @@
           <div class="col-md-6 col-lg-7">
             <div class="detail-box">
               <div class="heading_container">
-                <h2>Công ty LLNT</h2>
+                <h2>Công ty Teamups</h2>
               </div>
               <p>
               Dù chỉ mới được thành lập nhưng chúng tôi luôn đi đầu trong lĩnh vực cung cấp laptop cho người tiêu dùng nói chung và sinh viên nói riêng. Luôn là “Đối tác vàng” của các hãng máy tính Asus, Acer, Dell, HP, … Chúng tôi luôn mang đến khách hàng những sản phẩm chất lượng, giá cả cạnh tranh và dịch vụ ưu việt.
