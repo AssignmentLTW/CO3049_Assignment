@@ -33,61 +33,70 @@ session_start();
 </head>
 
 <body class="sub_page">
-    <div class="hero_area">
-        <!-- header section strats -->
-        <header class="header_section">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg custom_nav-container">
-                    <a class="navbar-brand" href="index.php">
-                        <span> Teamups </span>
-                    </a>
+<div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.php">
+              <span> Teamups </span>
+            </a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""> </span>
-                    </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php">Trang chủ </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="watches.php"> Laptops </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.php"> Giới thiệu </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="contact.php">Liên hệ </a>
-                                
-                            </li>
-                        </ul>
-                        <div class="user_option-box">
-                            <?php
-                            if (isset($_SESSION["username"])) {
-                                echo $_SESSION["username"];
-                                echo  '<a href="./login/logout.php">
-                            <i class="fa fa-sign-out"></i>
-                          </a>';
-                            } else
-                                echo '<a href="./login/login.php">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </a>'
-                            ?>
-                            <a href="">
-                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php">Trang chủ </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="laptop.php"> Laptops </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.php">
+                    Giới thiệu <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.php">Liên hệ</a>
+                </li>
+              </ul>
+              <div class="user_option-box">
+                <?php
+                  if (isset($_SESSION["username"])) {
+                    echo '<a href="./login/users_info.php" style="text-transform: none;">';
+                    echo $_SESSION["username"];
+                    echo'</a>';
+                    echo  '<a href="./login/logout.php">
+                                <i class="fa fa-sign-out"></i>
+                              </a>';
+                  } else
+                    echo '<a href="./login/login.php">
+                          <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>' ;
+                ?>
+                <a href="">
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
-        </header>
-        <!-- end header section -->
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
     </div>
 
     <!-- details section -->

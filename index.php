@@ -76,7 +76,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.php"
+                  <a class="nav-link" href="index.php" 
                     >Trang chủ <span class="sr-only">(current)</span></a
                   >
                 </li>
@@ -93,7 +93,7 @@
               <div class="user_option-box">
                 <?php
                 if (isset($_SESSION["username"])) {
-                  echo '<a href="./login/users_info.php">';
+                  echo '<a href="./login/users_info.php" style="text-transform: none;">';
                   echo $_SESSION["username"];
                   echo'</a>';
                   echo  '<a href="./login/logout.php">
