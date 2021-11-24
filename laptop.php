@@ -110,8 +110,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Acer Aspire 3 A315 56 37DV</h6>
                                 <h6>
-                                    Price:
-                                    <span> $529 </span>
+                                    Giá:
+                                    <span> 11,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -129,8 +129,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Asus Vivobook A415EA EB360T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $772 </span>
+                                    Giá:
+                                    <span> 17,490,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -148,8 +148,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming Acer Nitro 5 AN515 57 56S5</h6>
                                 <h6>
-                                    Price:
-                                    <span> $970 </span>
+                                    Giá:
+                                    <span> 21,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -167,8 +167,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming Asus ROG Strix G15 G513IC HN002T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $1191 </span>
+                                    Giá:
+                                    <span> 24,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -186,8 +186,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop ASUS TUF Gaming F15 FX506LH HN002T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $948 </span>
+                                    Giá:
+                                    <span> 20,490,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -205,8 +205,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop MSI Modern 15 A10MU 667VN</h6>
                                 <h6>
-                                    Price:
-                                    <span> $816 </span>
+                                    Giá:
+                                    <span> 18,490,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -224,8 +224,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming MSI Bravo 15 B5DD 276VN</h6>
                                 <h6>
-                                    Price:
-                                    <span> $970 </span>
+                                    Giá:
+                                    <span> 20,790,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -258,8 +258,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop ASUS TUF Gaming F15 FX506LH HN002T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $948 </span>
+                                    Giá:
+                                    <span> 20,490,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -277,8 +277,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming Acer Nitro 5 AN515 45 R3SM</h6>
                                 <h6>
-                                    Price:
-                                    <span> $970 </span>
+                                    Giá:
+                                    <span> 21,390,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -296,8 +296,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming MSI Bravo 15 B5DD 276VN</h6>
                                 <h6>
-                                    Price:
-                                    <span> $970 </span>
+                                    Giá:
+                                    <span> 20,790,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -315,8 +315,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming Acer Nitro 5 AN515 57 56S5</h6>
                                 <h6>
-                                    Price:
-                                    <span> $970 </span>
+                                    Giá:
+                                    <span> 21,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -334,8 +334,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming MSI Katana GF66 11UC 676VN</h6>
                                 <h6>
-                                    Price:
-                                    <span> $1103 </span>
+                                    Giá:
+                                    <span> 24,390,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -353,8 +353,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Gaming Asus ROG Strix G15 G513IC HN002T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $1191 </span>
+                                    Giá:
+                                    <span> 24,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -372,8 +372,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop gaming Lenovo Legion 5 15ACH6A 82NW003BVN</h6>
                                 <h6>
-                                    Price:
-                                    <span> $1544 </span>
+                                    Giá:
+                                    <span> 34,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -406,8 +406,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Acer Aspire 3 A315 56 502X</h6>
                                 <h6>
-                                    Price:
-                                    <span> $608 </span>
+                                    Giá:
+                                    <span> 13,790,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -425,8 +425,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop MSI Modern 15 A10MU 667VN</h6>
                                 <h6>
-                                    Price:
-                                    <span> $816 </span>
+                                    Giá:
+                                    <span> 18,490,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -444,8 +444,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Asus Vivobook M513UA L1221T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $829 </span>
+                                    Giá:
+                                    <span> 18,790,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -463,8 +463,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Acer Aspire 5 A514 54 540F</h6>
                                 <h6>
-                                    Price:
-                                    <span> $807 </span>
+                                    Giá:
+                                    <span> 18,290,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -482,8 +482,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop MSI Modern 14 B11SBU 668VN</h6>
                                 <h6>
-                                    Price:
-                                    <span> $992 </span>
+                                    Giá:
+                                    <span> 22,490,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -501,8 +501,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop HP Envy 13 BA1535TU 4U6M4PA</h6>
                                 <h6>
-                                    Price:
-                                    <span> $1279 </span>
+                                    Giá:
+                                    <span> 28,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -520,8 +520,8 @@ session_start();
                             <div class="detail-box row">
                                 <h6>Laptop Dell XPS 13 9310</h6>
                                 <h6>
-                                    Price:
-                                    <span> $1323 </span>
+                                    Giá:
+                                    <span> 29,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">

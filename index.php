@@ -202,12 +202,12 @@
     <!-- shop section -->
 
     <section class="shop_section layout_padding">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>Sản phẩm mới nhất</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>Bán chạy nhất</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="box">
                         <a href="details.php">
                             <div class="img-box">
@@ -216,8 +216,8 @@
                             <div class="detail-box row">
                                 <h6>Laptop Acer Aspire 3 A315 56 37DV</h6>
                                 <h6>
-                                    Price:
-                                    <span> $529 </span>
+                                    Giá:
+                                    <span> 11,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -225,8 +225,8 @@
                             </div>
                         </a>
                     </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
+                </div>
+                <div class="col-sm-6 col-xl-3">
                     <div class="box">
                         <a href="">
                             <div class="img-box">
@@ -235,8 +235,8 @@
                             <div class="detail-box row">
                                 <h6>Laptop Asus Vivobook A415EA EB360T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $772 </span>
+                                    Giá:
+                                    <span> 17,490,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -254,65 +254,8 @@
                             <div class="detail-box row">
                                 <h6>Laptop Gaming Acer Nitro 5 AN515 57 56S5</h6>
                                 <h6>
-                                    Price:
-                                    <span> $970 </span>
-                                </h6>
-                            </div>
-                            <div class="new">
-                                <span> New </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="box">
-                        <a href="">
-                            <div class="img-box">
-                                <img src="images/ul2.jpg" alt="" />
-                            </div>
-                            <div class="detail-box row">
-                                <h6>Laptop MSI Modern 15 A10MU 667VN</h6>
-                                <h6>
-                                    Price:
-                                    <span> $816 </span>
-                                </h6>
-                            </div>
-                            <div class="new">
-                                <span> New </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="box">
-                        <a href="">
-                            <div class="img-box">
-                                <img src="images/ul3.jpg" alt="" />
-                            </div>
-                            <div class="detail-box row">
-                                <h6>Laptop Asus Vivobook M513UA L1221T</h6>
-                                <h6>
-                                    Price:
-                                    <span> $829 </span>
-                                </h6>
-                            </div>
-                            <div class="new">
-                                <span> New </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="box">
-                        <a href="">
-                            <div class="img-box">
-                                <img src="images/ul7.jpg" alt="" />
-                            </div>
-                            <div class="detail-box row">
-                                <h6>Laptop Dell XPS 13 9310</h6>
-                                <h6>
-                                    Price:
-                                    <span> $1323 </span>
+                                    Giá:
+                                    <span> 21,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -330,8 +273,8 @@
                             <div class="detail-box row">
                                 <h6>Laptop Gaming Asus ROG Strix G15 G513IC HN002T</h6>
                                 <h6>
-                                    Price:
-                                    <span> $1191 </span>
+                                    Giá:
+                                    <span> 24,990,000₫ </span>
                                 </h6>
                             </div>
                             <div class="new">
@@ -340,11 +283,68 @@
                         </a>
                     </div>
                 </div>
-        </div>
-        <div class="btn-box">
+                <div class="col-sm-6 col-xl-3">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/bs5.jpg" alt="" />
+                            </div>
+                            <div class="detail-box row">
+                                <h6>Laptop ASUS TUF Gaming F15 FX506LH HN002T</h6>
+                                <h6>
+                                    Giá:
+                                    <span> 20,490,000₫ </span>
+                                </h6>
+                            </div>
+                            <div class="new">
+                                <span> New </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/bs6.jpg" alt="" />
+                            </div>
+                            <div class="detail-box row">
+                                <h6>Laptop MSI Modern 15 A10MU 667VN</h6>
+                                <h6>
+                                    Giá:
+                                    <span> 18,490,000₫ </span>
+                                </h6>
+                            </div>
+                            <div class="new">
+                                <span> New </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/bs7.jpg" alt="" />
+                            </div>
+                            <div class="detail-box row">
+                                <h6>Laptop Gaming MSI Bravo 15 B5DD 276VN</h6>
+                                <h6>
+                                    Giá:
+                                    <span> 20,790,000₫ </span>
+                                </h6>
+                            </div>
+                            <div class="new">
+                                <span> New </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
           <a href="./laptop.php"> Xem thêm </a>
+            </div>      
         </div>
-      </div>
     </section>
 
     <!-- end shop section -->
