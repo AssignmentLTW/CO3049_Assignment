@@ -83,9 +83,14 @@
                 <a href="">
                   <i class="fa fa-cart-plus" aria-hidden="true"></i>
                 </a>
-                <a href="">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
+                <a href=""></a>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <div class="search-box">
+                  <form action="">
+                      <input type="text" placeholder="" />
+                      <input type="submit" value="Search" />
+                  </form>
+                </div>
               </div>
             </div>
           </nav>
@@ -204,7 +209,7 @@
     <script src="js/bootstrap.js"></script>
 
     <!-- custom js -->
-    <script src="js/custom.js"></script>
+    <script src="js/script.js"></script>
     
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>

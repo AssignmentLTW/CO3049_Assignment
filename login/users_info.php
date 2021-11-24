@@ -1,5 +1,7 @@
 <?php
-session_start();
+  session_start();
+  if (!isset($_SESSION["username"]))
+    header("Location: Login.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,21 +14,12 @@ session_start();
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <title>Timups</title>
+    <title>Teamups</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
-    <!--owl slider stylesheet -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
+ 
     <link rel="stylesheet" href="my.css" />
 
     <!-- font awesome style -->
@@ -39,26 +32,23 @@ session_start();
   </head>
 <?php
 
+  require_once("connection.php");
 
-
-
-require_once("connection.php");
-
-if (isset($_POST["submit"])) {
-    $fullName = $_POST["fullName"];
-    $phone = $_POST["phone"];
-    $email = $_POST["email"];
-    $state = $_POST["state"];
-    $city = $_POST["city"];
-    $street = $_POST["street"];
-    if (is_numeric($phone))
-    {
-    $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email', city='$city' ,street='$street',state='$state' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
-    $update = mysqli_query($conn, $sql);}
-}
-$query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
-$result = mysqli_query($conn, $query);
-$row = mysqli_fetch_array($result);
+  if (isset($_POST["submit"])) {
+      $fullName = $_POST["fullName"];
+      $phone = $_POST["phone"];
+      $email = $_POST["email"];
+      $state = $_POST["state"];
+      $city = $_POST["city"];
+      $street = $_POST["street"];
+      if (is_numeric($phone))
+      {
+      $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email', city='$city' ,street='$street',state='$state' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+      $update = mysqli_query($conn, $sql);}
+  }
+  $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+  $result = mysqli_query($conn, $query);
+  $row = mysqli_fetch_array($result);
 ?>
   <body class="sub_page">
     <div class="hero_area">
@@ -105,11 +95,11 @@ $row = mysqli_fetch_array($result);
                   echo '<a href="../login/users_info.php" style="text-transform: none;">';
                   echo $_SESSION["username"];
                   echo'</a>';
-                  echo  '<a href="./login/logout.php">
+                  echo  '<a href="logout.php">
                               <i class="fa fa-sign-out"></i>
                             </a>';
                 } else
-                  echo '<a href="./login/login.php">
+                  echo '<a href="login.php">
                         <i class="fa fa-user" aria-hidden="true"></i>
                       </a>' ;
                 ?>
@@ -132,7 +122,7 @@ $row = mysqli_fetch_array($result);
     <section class="about_section layout_padding">
     <div class="container">
         <div class="row gutters">
-            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                 <div class="card h-100">
                     <div class="card-body">
                         <div class="account-settings">
@@ -148,7 +138,7 @@ $row = mysqli_fetch_array($result);
                     </div>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="card h-100">
                     <form method="POST">
                         <div class="card-body">
@@ -224,10 +214,9 @@ $row = mysqli_fetch_array($result);
         <div class="row">
           <div class="col-md-6 col-lg-4 footer-col">
             <div class="footer_detail">
-              <h4>About</h4>
+              <h4>Giới thiệu</h4>
               <p>
-                Necessary, making this the first true generator on the Internet.
-                It uses a dictionary of over 200 Latin words, combined with
+              Đơn vị cung cấp laptop hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ngay nhiều ưu đãi hấp dẫn.
               </p>
               <div class="footer_social">
                 <a href="">
@@ -247,15 +236,15 @@ $row = mysqli_fetch_array($result);
           </div>
           <div class="col-md-6 col-lg-4 footer-col">
             <div class="footer_contact">
-              <h4>Reach at..</h4>
+              <h4>Liên hệ</h4>
               <div class="contact_link_box">
                 <a href="">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span> Location </span>
+                  <span> Thu Duc, Ho Chi Minh City </span>
                 </a>
                 <a href="">
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span> Call +01 1234567890 </span>
+                  <span> Call +84 123456789 </span>
                 </a>
                 <a href="">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -279,18 +268,12 @@ $row = mysqli_fetch_array($result);
 
     <!-- jQery -->
     <script src="../js/jquery-3.4.1.min.js"></script>
-    <!-- popper js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+
     <!-- bootstrap js -->
     <script src="../js/bootstrap.js"></script>
-    <!-- owl slider -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ 
     <!-- custom js -->
-    <script src="../js/custom.js"></script>
+    <script src="../js/script.js"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->

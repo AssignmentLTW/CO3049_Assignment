@@ -1,4 +1,9 @@
 /** google_map js **/
+$(document).ready(function () {
+  $(".fa-search").click(function () {
+    $(".search-box").toggle();
+  });
+});
 
 function myMap() {
   var mapProp = {
