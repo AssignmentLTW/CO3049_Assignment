@@ -64,7 +64,7 @@
                   <a class="nav-link" href="index.php">Trang chủ </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="watches.php"> Laptops </a>
+                  <a class="nav-link" href="laptop.php"> Laptops </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.php"> Giới thiệu </a>
