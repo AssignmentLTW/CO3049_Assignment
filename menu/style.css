@@ -1,0 +1,173 @@
+/*
+body {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+}
+*/
+
+.menu {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    background-color: #ccc;
+}
+
+aside h2 {
+    font-size: 1em;
+    text-align: center;
+    padding: 8px 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+aside ul a:hover {
+    text-decoration: none;
+}
+
+.picture {
+    width: 10px;
+}
+
+.col {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #EBEBEB;
+}
+
+
+/*
+.cart {
+    background-color: cornsilk;
+}
+
+.cart-name-food {
+    text-align: center;
+}
+
+.total_price {
+    text-align: center;
+}
+*/
+
+
+/*
+.price {
+    border: 1px solid black;
+    margin-right: 5px;
+    text-align: center;
+}
+*/
+
+.btn {
+    color: black;
+}
+
+
+/* ----------------- CART PAGE --------------*/
+
+.products-container {
+    max-width: 650px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    /*border-bottom: 4px solid lightgrey;*/
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    /*border-bottom: 1px solid lightgrey;*/
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    /*border-bottom: 1px solid lightgrey;*/
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.product ion-icon {
+    cursor: pointer;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
