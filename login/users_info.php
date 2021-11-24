@@ -203,7 +203,7 @@ $row = mysqli_fetch_array($result);
                             <div class="row gutters">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="text-right">
-                                        <button type="button" id="submit" name="cancle" class="btn btn-secondary">Cancel</button>
+                                        <button type="reset" id="submit" name="cancle" class="btn btn-secondary">Cancel</button>
                                         <button type="submit" id="submit" name="submit" class="btn btn-primary">Update</button>
                                     </div>
                                 </div>
@@ -222,7 +222,7 @@ $row = mysqli_fetch_array($result);
     <footer class="footer_section">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3 footer-col">
+          <div class="col-md-6 col-lg-4 footer-col">
             <div class="footer_detail">
               <h4>About</h4>
               <p>
@@ -245,7 +245,7 @@ $row = mysqli_fetch_array($result);
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 footer-col">
+          <div class="col-md-6 col-lg-4 footer-col">
             <div class="footer_contact">
               <h4>Reach at..</h4>
               <div class="contact_link_box">
@@ -264,28 +264,14 @@ $row = mysqli_fetch_array($result);
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 footer-col">
-            <div class="footer_contact">
-              <h4>Subscribe</h4>
-              <form action="#">
-                <input type="text" placeholder="Enter email" />
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 footer-col">
+          
+          <div class="col-md-6 col-lg-4 footer-col">
             <div class="map_container">
               <div class="map">
                 <div id="googleMap"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="footer-info">
-          <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="https://html.design/">Free Html Templates</a>
-          </p>
         </div>
       </div>
     </footer>
