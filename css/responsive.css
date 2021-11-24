@@ -2,21 +2,44 @@
   .footer_container {
     border-radius: 250px 0 0 0;
   }
+  .search-box {
+    width: 270px;
+    left: 79.5%;
+  }
+  .search-box input[type="text"] {
+    width: 140px;
+    margin-left: 15px;
+  }
+  .search-box input[type="button"] {
+    margin-right: 12px;
+  }
 }
 
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+  .search-box {
+    width: 270px;
+    left: 74.5%;
+  }
+  .search-box input[type="text"] {
+    width: 140px;
+    margin-left: 15px;
+  }
+  .search-box input[type="button"] {
+    margin-right: 12px;
+  }
+}
 
 @media (max-width: 992px) {
   .hero_area {
     height: auto;
   }
 
-  .user_option-box{
+  .user_option-box {
     justify-content: center;
   }
   .user_option-box a {
     margin: 0 7px;
-}
+  }
   .custom_nav-container .navbar-nav {
     margin: 0;
     margin-left: auto;
@@ -27,7 +50,6 @@
     padding-top: 15px;
   }
 
-
   .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 5px 25px;
     margin: 5px 0;
@@ -36,7 +58,18 @@
   .slider_section {
     padding: 75px 0;
   }
-
+  .search-box {
+    width: 270px;
+    top: 275px;
+    left: 28%;
+  }
+  .search-box input[type="text"] {
+    width: 140px;
+    margin-left: 15px;
+  }
+  .search-box input[type="button"] {
+    margin-right: 12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -48,12 +81,22 @@
     margin-bottom: 45px;
   }
 
-
   .about_section .img-box,
   .contact_section .form_container {
     margin-bottom: 45px;
   }
-
+  .search-box {
+    width: 270px;
+    top: 275px;
+    left: 20%;
+  }
+  .search-box input[type="text"] {
+    width: 140px;
+    margin-left: 15px;
+  }
+  .search-box input[type="button"] {
+    margin-right: 12px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -66,13 +109,31 @@
     bottom: -15px;
     transform: none;
   }
+  .search-box {
+    width: 270px;
+    top: 275px;
+    left: 20%;
+  }
+  .search-box::before {
+    display: none;
+  }
+  .search-box input[type="text"] {
+    width: 140px;
+    margin-left: 15px;
+  }
+  .search-box input[type="button"] {
+    margin-right: 12px;
+  }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+}
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+}
 
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+}
 
 @media (min-width: 1200px) {
   .container {
