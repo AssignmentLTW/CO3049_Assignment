@@ -38,12 +38,12 @@
       $fullName = $_POST["fullName"];
       $phone = $_POST["phone"];
       $email = $_POST["email"];
-      $state = $_POST["state"];
+      $district = $_POST["district"];
       $city = $_POST["city"];
-      $street = $_POST["street"];
+      $town = $_POST["town"];
       if (is_numeric($phone))
       {
-      $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email', city='$city' ,street='$street',state='$state' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+      $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email', city='$city' ,town='$town',district='$district' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
       $update = mysqli_query($conn, $sql);}
   }
   $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
@@ -117,7 +117,7 @@
       <!-- end header section -->
     </div>
 
-    <!-- about section -->
+    <!-- info section -->
 
     <section class="about_section layout_padding">
     <div class="container">
@@ -172,8 +172,8 @@
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
-                                        <label for="Street">Phường/Xã</label>
-                                        <input type="name" class="form-control" name="street" value="<?php echo $row['street']; ?>" id=" Street" placeholder="Nhập phường/xã">
+                                        <label for="Town">Phường/Xã</label>
+                                        <input type="name" class="form-control" name="town" value="<?php echo $row['town']; ?>" id=" Town" placeholder="Nhập phường/xã">
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -184,8 +184,8 @@
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
-                                        <label for="sTate">Quận/Huyện</label>
-                                        <input type="name" class="form-control" name="state" value="<?php echo $row['state']; ?>" id="sTate" placeholder=" Nhập quận/huyện">
+                                        <label for="District">Quận/Huyện</label>
+                                        <input type="name" class="form-control" name="district" value="<?php echo $row['district']; ?>" id="District" placeholder=" Nhập quận/huyện">
                                     </div>
                                 </div>
 

@@ -1,5 +1,5 @@
 <?php
-  session_start();
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,29 +12,28 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+ 
     <title>Teamups</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <!--owl slider stylesheet -->
 
     <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-
+    <link href="../css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
   </head>
-
   <body class="sub_page">
     <div class="hero_area">
       <!-- header section strats -->
       <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="../index.php">
               <span> Teamups </span>
             </a>
 
@@ -53,24 +52,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">Trang chủ </a>
+                  <a class="nav-link" href="../index.php">Trang chủ </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="laptop.php"> Laptops </a>
+                  <a class="nav-link" href="../laptop.php"> Laptops </a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="about.php">
-                    Giới thiệu <span class="sr-only">(current)</span>
+                <li class="nav-item ">
+                  <a class="nav-link" href="../about.php">
+                    Giới thiệu 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Liên hệ</a>
+                  <a class="nav-link" href="../contact.php">Liên hệ</a>
                 </li>
               </ul>
               <div class="user_option-box">
               <?php
                 if (isset($_SESSION["username"])) {
-                  require_once("login/connection.php");
+                  require_once("../login/connection.php");
                   $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
                   $result = mysqli_query($conn, $query);
                   $row = mysqli_fetch_array($result);  
@@ -78,35 +77,25 @@
                     echo '<span style="text-transform: uppercase;">';
                     echo $_SESSION["username"];
                     echo'</span>';
-                    echo '<a href="user/table_user.php">
+                    echo '<a href="table_user.php">
                             <i class="fa fa-cogs"></i>
                           </a>';
                     
                   }
-                  else {
-                    echo '<a href="./login/users_info.php" style="text-transform: none;">';
-                    echo $_SESSION["username"];
-                    echo'</a>';
-                  }
-                  echo  '<a href="./login/logout.php">
+                  echo  '<a href="../login/logout.php">
                               <i class="fa fa-sign-out"></i>
                             </a>';
                 } else
-                  echo '<a href="./login/login.php">
+                  echo '<a href="../login/login.php">
                         <i class="fa fa-user" aria-hidden="true"></i>
                       </a>' ;
-              ?>
+                ?>
                 <a href="">
                   <i class="fa fa-cart-plus" aria-hidden="true"></i>
                 </a>
-                <a href=""></a>
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <div class="search-box">
-                  <form action="">
-                      <input type="text" placeholder="" />
-                      <input type="submit" value="Search" />
-                  </form>
-                </div>
+                <a href="">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </nav>
@@ -115,66 +104,21 @@
       <!-- end header section -->
     </div>
 
-    <!-- about section -->
-
-    <section class="about_section layout_padding">
+    <section class="layout_padding">
       <div class="container">
+        <h2 style="text-align: center; padding-bottom: 20px; font-weight:bold">
+        Danh sách thành viên</h2>  
         <div class="row">
-          <div class="col-md-6 col-lg-5">
-            <div class="img-box">
-              <img src="images/about.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>Công ty Teamups</h2>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="table">
+                <?php
+                  include 'display.php';
+                ?>
               </div>
-              <p>
-              Dù chỉ mới được thành lập nhưng chúng tôi luôn đi đầu trong lĩnh vực cung cấp laptop cho người tiêu dùng nói chung và sinh viên nói riêng. Luôn là “Đối tác vàng” của các hãng máy tính Asus, Acer, Dell, HP, … Chúng tôi luôn mang đến khách hàng những sản phẩm chất lượng, giá cả cạnh tranh và dịch vụ ưu việt.
-              </p>
-            </div>
-            
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row" style="padding-top: 50px;">
-          <div class="col-md-6 col-lg-6">
-            <div class="detail-box">
-                <div class="heading_container">
-                  <h2>Lợi thế cạnh tranh</h2>
-                </div>
-                <p>
-                - Là đối tác vàng của các hãng máy tính Acer, Asus, Dell, HP, …, cam kết sản phẩm chính hãng, giá cả phù hợp với sinh viên và dịch vụ ưu việt. Các hãng luôn có chính sách bảo hành tận nơi hoặc giao nhận tận nơi trên toàn quốc.
-                </p>
-                <p>- Trung tâm bảo hành cam kết uy tín và trình độ chuyên môn cao.</p>
-                <p>- Showroom trưng bày rộng rãi.</p>
-                <p>- Khả năng cung cấp số lượng máy lớn với cấu hình chuyên biệt.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>Thị trường mục tiêu</h2>
-              </div>
-              <p>
-              - Phát triển hệ thống đại lý kinh doanh máy tính toàn quốc.
-              </p>
-              <p>- Phát triển khách hàng khu công nghiệp, doanh nghiệp toàn quốc.</p>
-              <p>- Cá nhân cần những máy tính chuyên biệt theo yêu cầu: mỏng nhẹ, cao cấp, cấu hình mạnh.</p>
-
-            </div>
-            
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- end about section -->
-
-    <!-- footer section -->
-    <footer class="footer_section" >
+    <footer class="footer_section">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4 footer-col">
@@ -231,16 +175,33 @@
       </div>
     </footer>
     <!-- footer section -->
-
-    <!-- jQery -->
-    <script src="js/jquery-3.4.1.min.js"></script>
- 
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.js"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#form").submit(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    type: 'post',
+                    url: 'display.php',
+                    data: $('#form').serialize(),
+                    success: function() {}
+                });
+            });
+        });
+        setInterval(function() {
+            $.ajax({
+                url: "display.php",
+                success: function(r) {
+                    $("#table").html(r);
+                }
+            });
+        }, 1000);
+    </script>
     
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->

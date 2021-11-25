@@ -84,9 +84,24 @@
               <div class="user_option-box">
                 <?php
                 if (isset($_SESSION["username"])) {
-                  echo '<a href="./login/users_info.php" style="text-transform: none;">';
-                  echo $_SESSION["username"];
-                  echo'</a>';
+                  require_once("login/connection.php");
+                  $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+                  $result = mysqli_query($conn, $query);
+                  $row = mysqli_fetch_array($result);  
+                  if ($row["admin"] == 'Y') {
+                    echo '<span style="text-transform: uppercase;">';
+                    echo $_SESSION["username"];
+                    echo'</span>';
+                    echo '<a href="user/table_user.php">
+                            <i class="fa fa-cogs"></i>
+                          </a>';
+                    
+                  }
+                  else {
+                    echo '<a href="./login/users_info.php" style="text-transform: none;">';
+                    echo $_SESSION["username"];
+                    echo'</a>';
+                  }
                   echo  '<a href="./login/logout.php">
                               <i class="fa fa-sign-out"></i>
                             </a>';
@@ -145,6 +160,28 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="detail-box">
+                      <h1>Laptop Dell</h1>
+                      <p>
+                      Được thành lập vào năm 1984, công ty đa quốc gia của Hoa Kỳ - Dell Inc, ngày càng phát triển với phạm vi hoạt động trên toàn cầu hiện nay. Dell Inc là một công ty phát triển và thương mại hóa công nghệ máy tính có trụ sở tại Round Rock, Texas (Hoa Kỳ).
+                      </p>
+                      <div class="btn-box">
+                      <a href="contact.php" class="btn1"> Liên hệ </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="images/dell-computer.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
                       <h1>Laptop Acer</h1>
                       <p>
                       Thành lập vào năm 1976, Acer là một trong những công ty hàng đầu trên thế giới về ngành Công nghệ thông tin & Truyền thông và có mặt tại hơn 160 quốc gia, trong đó có Việt Nam.
@@ -184,6 +221,7 @@
                 </div>
               </div>
             </div>
+            
           </div>
           <ol class="carousel-indicators">
             <li
@@ -193,6 +231,7 @@
             ></li>
             <li data-target="#customCarousel1" data-slide-to="1"></li>
             <li data-target="#customCarousel1" data-slide-to="2"></li>
+            <li data-target="#customCarousel1" data-slide-to="3"></li>
           </ol>
         </div>
       </section>
@@ -209,7 +248,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="box">
-                        <a href="details.php">
+                        <a href="details/details01.php">
                             <div class="img-box">
                                 <img src="images/bs1.jpg" alt="" />
                             </div>
@@ -228,7 +267,7 @@
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="details/details03.php">
                             <div class="img-box">
                                 <img src="images/bs2.jpg" alt="" />
                             </div>
@@ -247,7 +286,7 @@
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="details/details02.php">
                             <div class="img-box">
                                 <img src="images/bs3.jpg" alt="" />
                             </div>
@@ -266,7 +305,7 @@
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="details/details05.php">
                             <div class="img-box">
                                 <img src="images/bs4.jpg" alt="" />
                             </div>
@@ -285,7 +324,7 @@
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="details/details04.php">
                             <div class="img-box">
                                 <img src="images/bs5.jpg" alt="" />
                             </div>
