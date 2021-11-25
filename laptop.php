@@ -141,7 +141,7 @@ session_start();
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="details/details02.php">
                             <div class="img-box">
                                 <img src="images/bs3.jpg" alt="" />
                             </div>

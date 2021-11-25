@@ -97,32 +97,32 @@ session_start();
     <section class="detail_section ">
         <div class="container">
             <div class="title">
-                <p><a href="#">Laptops</a> &gt; <a href="#">Details</a> &gt; <a href="#">Laptop Acer Aspire 3 A315 56
-                        37DV</a></p>
+                <p><a href="../laptop.php">Laptops</a> &gt; <a href="#">Details</a> &gt; <a href="#">Laptop Gaming Acer
+                        Nitro 5 AN515 57 56S5</a></p>
             </div>
             <div class="row">
 
                 <div class=" box-large col-md-6 ">
 
                     <div class="box-top">
-                        <img id="big_img" class="img-fluid" src="../images/sp01-detail00.jpg" alt="Product">
+                        <img id="big_img" class="img-fluid" src="../images/sp02-detail00.jpg" alt="Product">
                     </div>
                     <div class="box-bottom">
                         <div class="row">
                             <div class="col">
-                                <a href="#" onclick="changeImage(1)"><img src="../images/sp01-detail01.jpg"
+                                <a href="#" onclick="changeImage(1)"><img src="../images/sp02-detail01.jpg"
                                         alt="Product"></a>
                             </div>
                             <div class="col">
-                                <a href="#" onclick="changeImage(2)"><img src="../images/sp01-detail02.jpg"
+                                <a href="#" onclick="changeImage(2)"><img src="../images/sp02-detail02.jpg"
                                         alt="Product"></a>
                             </div>
                             <div class="col">
-                                <a href="#" onclick="changeImage(3)"><img src="../images/sp01-detail03.jpg"
+                                <a href="#" onclick="changeImage(3)"><img src="../images/sp02-detail03.jpg"
                                         alt="Product"></a>
                             </div>
                             <div class="col">
-                                <a href="#" onclick="changeImage(4)"><img src="../images/sp01-detail04.jpg"
+                                <a href="#" onclick="changeImage(4)"><img src="../images/sp02-detail04.jpg"
                                         alt="Product"></a>
                             </div>
                         </div>
@@ -131,12 +131,12 @@ session_start();
 
                 <div class="summary col-md-6 ">
 
-                    <h2>Laptop Acer Aspire 3 A315 56 37DV</h2>
+                    <h2>Laptop Gaming Acer Nitro 5 AN515 57 56S5</h2>
                     <p>Nhà sản xuất : ACER</p>
                     <p>Xuất xứ : Chính hãng</p>
                     <p>Bảo hành : 12 Tháng</p>
                     <p>Tình trạng : Mới 100%</p>
-                    <h3>Giá: 11,990,000₫</h3>
+                    <h3>Giá: 21,990,000₫</h3>
                     <button class="btn btn-outline-primary btn-block" type="button">Thêm vào giỏ hàng</button>
                     <button class="btn btn-success btn-block" type="button">Mua ngay</button>
                 </div>
@@ -172,32 +172,33 @@ session_start();
                                 </tr>
                                 <tr>
                                     <th>Model</th>
-                                    <th>Acer Aspire 3 A315 56 37DV</th>
+                                    <th>Laptop Gaming Acer Nitro 5 AN515 57 56S5</th>
                                 </tr>
                                 <tr>
                                     <th>CPU</th>
-                                    <th>Intel Core i3-1005G1 1.2GHz up to 3.4GHz 4MB</th>
+                                    <th>Intel® Core i5-11400H upto 4.50 GHz, 6 nhân 12 luồng</th>
                                 </tr>
                                 <tr>
                                     <th>RAM</th>
-                                    <th>4GB DDR4 2400MHz Onboard ( 1x onboard 4GB + 1x SO-DIMM socket, up to 12GB SDRAM)
+                                    <th>8GB DDR4 3200MHz (2 slot SO-DIMM socket, nâng cấp tối đa 32GB SDRAM)
                                     </th>
                                 </tr>
                                 <tr>
                                     <th>Ổ cứng</th>
-                                    <th>256GB SSD M.2 PCIE, 1x slot SATA3 2.5"</th>
+                                    <th>512GB SSD M.2 PCIE (nâng cấp tối đa 1TB SSD PCIe Gen3, 8 Gb/s, NVMe và 2TB HDD
+                                        2.5-inch 5400 RPM) (Còn trống 1 khe SSD M.2 PCIE và 1 khe 2.5" SATA)</th>
                                 </tr>
                                 <tr>
                                     <th>Card đồ họa</th>
-                                    <th>Intel UHD Graphics</th>
+                                    <th>NVIDIA® GeForce GTX™ 1650 4GB GDDR6</th>
                                 </tr>
                                 <tr>
                                     <th>Màn hình</th>
-                                    <th>15.6" FHD (1920 x 1080) Acer ComfyView LCD, Anti-Glare</th>
+                                    <th>15.6 inch FHD(1920 x 1080) IPS 144Hz SlimBezel</th>
                                 </tr>
                                 <tr>
                                     <th>Cổng giao tiếp</th>
-                                    <th> 1x USB 3.1, 2x USB 2.0, HDMI, RJ-45</th>
+                                    <th> 3x USB 3.1 Gen 1, 1x USB 3.2 Gen 2 Type C, 1x HDMI, RJ45</th>
                                 </tr>
                                 <tr>
                                     <th>Ổ quang</th>
@@ -205,7 +206,7 @@ session_start();
                                 </tr>
                                 <tr>
                                     <th>Audio</th>
-                                    <th>Realtek High Definition</th>
+                                    <th>Waves MaxxAudio®, Acer TrueHarmony™</th>
                                 </tr>
                                 <tr>
                                     <th>Đọc thẻ nhớ</th>
@@ -213,15 +214,15 @@ session_start();
                                 </tr>
                                 <tr>
                                     <th>Chuẩn LAN</th>
-                                    <th>10/100/1000 Mbps</th>
+                                    <th>10/100/1000/Gigabits Base T</th>
                                 </tr>
                                 <tr>
                                     <th>Chuẩn WIFI</th>
-                                    <th>802.11 ac</th>
+                                    <th>802.11AX (2x2)</th>
                                 </tr>
                                 <tr>
                                     <th>Bluetooth</th>
-                                    <th>v4.2</th>
+                                    <th>Bluetooth® 5.1</th>
                                 </tr>
                                 <tr>
                                     <th>Webcam</th>
@@ -229,23 +230,23 @@ session_start();
                                 </tr>
                                 <tr>
                                     <th>Hệ điều hành</th>
-                                    <th>Windows 10 Home</th>
+                                    <th>Windows 11 Home</th>
                                 </tr>
                                 <tr>
                                     <th>Pin</th>
-                                    <th>3 Cell 36.7 Whr</th>
+                                    <th>4 Cell 57.5WHr</th>
                                 </tr>
                                 <tr>
                                     <th>Trọng lượng</th>
-                                    <th>1.7 kg</th>
+                                    <th>2.20 kg</th>
                                 </tr>
                                 <tr>
                                     <th>Màu sắc</th>
-                                    <th>Shale Black</th>
+                                    <th>Đen</th>
                                 </tr>
                                 <tr>
                                     <th>Kích thước</th>
-                                    <th>363 x 247.5 x 19.9 (mm)</th>
+                                    <th>363.4 x 255 x 23.9 mm</th>
                                 </tr>
                             </table>
 
@@ -326,7 +327,7 @@ session_start();
     <!-- Chang images details -->
     <script>
     function changeImage(image) {
-        document.getElementById("big_img").src = "../images/sp01-detail0" + image + ".jpg";
+        document.getElementById("big_img").src = "../images/sp02-detail0" + image + ".jpg";
     }
     </script>
     <!-- jQery -->
