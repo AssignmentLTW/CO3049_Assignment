@@ -16,7 +16,7 @@ session_start();
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
- 
+
 
     <!-- font awesome style -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@ session_start();
 </head>
 
 <body class="sub_page">
-<div class="hero_area">
+    <div class="hero_area">
         <!-- header section strats -->
         <header class="header_section">
             <div class="container-fluid">
@@ -62,17 +62,17 @@ session_start();
                         </ul>
                         <div class="user_option-box">
                             <?php
-                                if (isset($_SESSION["username"])) {
+                            if (isset($_SESSION["username"])) {
                                 echo '<a href="./login/users_info.php" style="text-transform: none;">';
                                 echo $_SESSION["username"];
-                                echo'</a>';
+                                echo '</a>';
                                 echo  '<a href="./login/logout.php">
                                             <i class="fa fa-sign-out"></i>
                                             </a>';
-                                } else
+                            } else
                                 echo '<a href="./login/login.php">
                                         <i class="fa fa-user" aria-hidden="true"></i>
-                                    </a>' ;
+                                    </a>';
                             ?>
                             <a href="">
                                 <i class="fa fa-cart-plus" aria-hidden="true"></i>
@@ -103,7 +103,7 @@ session_start();
             <div class="row">
                 <div class="col-md-6">
                     <div class="box">
-                        <a href="details.php">
+                        <a href="details/details01.php">
                             <div class="img-box">
                                 <img src="images/bs1.jpg" alt="" />
                             </div>
@@ -383,7 +383,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -531,82 +531,83 @@ session_start();
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
     <!-- end shop ultrabook section -->
 
- <!-- footer section -->
- <footer class="footer_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 footer-col">
-            <div class="footer_detail">
-              <h4>Giới thiệu</h4>
-              <p>
-              Đơn vị cung cấp laptop hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ngay nhiều ưu đãi hấp dẫn.
-              </p>
-              <div class="footer_social">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </div>
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 footer-col">
+                    <div class="footer_detail">
+                        <h4>Giới thiệu</h4>
+                        <p>
+                            Đơn vị cung cấp laptop hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ngay nhiều ưu
+                            đãi hấp dẫn.
+                        </p>
+                        <div class="footer_social">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 footer-col">
+                    <div class="footer_contact">
+                        <h4>Liên hệ</h4>
+                        <div class="contact_link_box">
+                            <a href="">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span> Thu Duc, Ho Chi Minh City </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span> Call +84 123456789 </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span> demo@gmail.com </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 footer-col">
+                    <div class="map_container">
+                        <div class="map">
+                            <div id="googleMap"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 footer-col">
-            <div class="footer_contact">
-              <h4>Liên hệ</h4>
-              <div class="contact_link_box">
-                <a href="">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span> Thu Duc, Ho Chi Minh City </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span> Call +84 123456789 </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span> demo@gmail.com </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-lg-4 footer-col">
-            <div class="map_container">
-              <div class="map">
-                <div id="googleMap"></div>
-              </div>
-            </div>
-          </div>
+
         </div>
-        
-      </div>
     </footer>
     <!-- footer section -->
 
-    
+
 
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>
- 
+
     <!-- bootstrap js -->
     <script src="js/bootstrap.js"></script>
 
     <!-- custom js -->
     <script src="js/script.js"></script>
-    
+
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
     </script>
