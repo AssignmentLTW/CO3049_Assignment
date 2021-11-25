@@ -160,7 +160,7 @@ session_start();
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="./details/details05.php">
                             <div class="img-box">
                                 <img src="images/bs4.jpg" alt="" />
                             </div>
@@ -179,7 +179,7 @@ session_start();
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="./details/details04.php">
                             <div class="img-box">
                                 <img src="images/bs5.jpg" alt="" />
                             </div>
@@ -346,7 +346,7 @@ session_start();
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="box">
-                        <a href="">
+                        <a href="./details/details05.php">
                             <div class="img-box">
                                 <img src="images/gm6.jpg" alt="" />
                             </div>
@@ -399,7 +399,7 @@ session_start();
             <div class="row">
                 <div class="col-md-6">
                     <div class="box">
-                        <a href="">
+                        <a href="./details/details01.php">
                             <div class="img-box">
                                 <img src="images/ul1.jpg" alt="" />
                             </div>
