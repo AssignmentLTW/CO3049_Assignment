@@ -78,7 +78,7 @@
                     echo '<span style="text-transform: uppercase;">';
                     echo $_SESSION["username"];
                     echo'</span>';
-                    echo '<a href="user/table_user.php">
+                    echo '<a href="admin/table_user.php">
                             <i class="fa fa-cogs"></i>
                           </a>';
                     

@@ -20,7 +20,7 @@
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
  
-    <link rel="stylesheet" href="my.css" />
+    <link rel="stylesheet" href="user.css" />
 
     <!-- font awesome style -->
     <link href="../css/font-awesome.min.css" rel="stylesheet" />
@@ -34,17 +34,34 @@
 
   require_once("connection.php");
 
-  if (isset($_POST["submit"])) {
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $fullName = $_POST["fullName"];
       $phone = $_POST["phone"];
       $email = $_POST["email"];
       $district = $_POST["district"];
       $city = $_POST["city"];
       $town = $_POST["town"];
-      if (is_numeric($phone))
-      {
-      $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email', city='$city' ,town='$town',district='$district' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
-      $update = mysqli_query($conn, $sql);}
+      $link="";
+      $allowedExts = array("jpg", "jpeg", "gif", "png");
+      $nameParts = explode(".", $_FILES["file"]["name"]);
+      $extension = end($nameParts);
+      if ((($_FILES["file"]["type"] == "image/gif")
+          || ($_FILES["file"]["type"] == "image/jpeg")
+          || ($_FILES["file"]["type"] == "image/png")
+          || ($_FILES["file"]["type"] == "image/pjpeg"))
+          && ($_FILES["file"]["size"] < 2000000)
+          && in_array($extension, $allowedExts)) {
+        
+            move_uploaded_file($_FILES["file"]["tmp_name"],
+            "avatar/" . $_FILES["file"]["name"]);
+          $link = "avatar/" .$_FILES["file"]["name"];
+      }
+
+      if (is_numeric($phone)) {
+        $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email', city='$city' ,town='$town',district='$district', avatar='$link' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+        $update = mysqli_query($conn, $sql);
+      }
+      
   }
   $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
   $result = mysqli_query($conn, $query);
@@ -121,88 +138,97 @@
 
     <section class="about_section layout_padding">
     <div class="container">
-        <div class="row gutters">
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="account-settings">
-                            <div class="user-profile">
-                                <div class="user-avatar">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
-                                </div>
-                                <h5 class="user-name" style="color: black"><?php echo $_SESSION['username']; ?></h5>
-                                <h6 class="user-email" style="color: black"><?php echo $row['email']; ?></h6>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                <div class="card h-100">
-                    <form method="POST">
-                        <div class="card-body">
-                            <div class="row gutters">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <h6 class="mb-2 text-primary">Thông tin cá nhân</h6>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="fullName">Họ tên</label>
-                                        <input type="text" class="form-control" id="fullName" name="fullName" value="<?php echo $row['fullName']; ?>" placeholder=" Nhập họ tên">
+        <form method="POST" enctype="multipart/form-data">
+          <div class="row gutters">
+              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                  <div class="card h-100">
+                      <div class="card-body">
+                          <div class="account-settings">
+                              <div class="user-profile">
+                                  <div class="user-avatar">
+                                    <div class="">
+                                        <img src="<?php 
+                                                    if ($row['avatar'] == "") 
+                                                      echo "https://bootdey.com/img/Content/avatar/avatar7.png";
+                                                    else  echo $row['avatar'];
+                                                  ?>  " alt="" id="photo">
+                                        <input type="file" name="file" id="file"  />
+                                        <div><label for="file" id="uploadBtn" class="btn btn-primary">Chọn ảnh</label></div>
                                     </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="eMail">Email</label>
-                                        <input type="email" class="form-control" id="eMail" name="email" value="<?php echo $row['email']; ?>" placeholder=" Nhập địa chỉ email">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="phone">Số điện thoại</label>
-                                        <input type="text" class="form-control" id="phone" name="phone" value="<?php echo $row['phone']; ?>" placeholder=" Nhập số điện thoại">
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="row gutters">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <h6 class="mt-3 mb-2 text-primary">Địa chỉ</h6>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="Town">Phường/Xã</label>
-                                        <input type="name" class="form-control" name="town" value="<?php echo $row['town']; ?>" id=" Town" placeholder="Nhập phường/xã">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="ciTy">Tỉnh/Thành phố</label>
-                                        <input type="name" class="form-control" name="city" value="<?php echo $row['city']; ?>" id=" ciTy " placeholder="Nhập tỉnh/thành phố">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="District">Quận/Huyện</label>
-                                        <input type="name" class="form-control" name="district" value="<?php echo $row['district']; ?>" id="District" placeholder=" Nhập quận/huyện">
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="row gutters">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div class="text-right">
-                                        <button type="reset" id="submit" name="cancle" class="btn btn-secondary">Cancel</button>
-                                        <button type="submit" id="submit" name="submit" class="btn btn-primary">Update</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+                                  </div>
+                                  <h5 class="user-name" style="color: black"><?php echo $_SESSION['username']; ?></h5>
+                                  <h6 class="user-email" style="color: black"><?php echo $row['email']; ?></h6>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                  <div class="card h-100">
+                      
+                          <div class="card-body">
+                              <div class="row gutters">
+                                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                      <h6 class="mb-2 text-primary">Thông tin cá nhân</h6>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
+                                          <label for="fullName">Họ tên</label>
+                                          <input type="text" class="form-control" id="fullName" name="fullName" value="<?php echo $row['fullName']; ?>" placeholder=" Nhập họ tên">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
+                                          <label for="eMail">Email</label>
+                                          <input type="email" class="form-control" id="eMail" name="email" value="<?php echo $row['email']; ?>" placeholder=" Nhập địa chỉ email">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
+                                          <label for="phone">Số điện thoại</label>
+                                          <input type="text" class="form-control" id="phone" name="phone" value="<?php echo $row['phone']; ?>" placeholder=" Nhập số điện thoại">
+                                      </div>
+                                  </div>
+  
+                              </div>
+                              <div class="row gutters">
+                                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                      <h6 class="mt-3 mb-2 text-primary">Địa chỉ</h6>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
+                                          <label for="Town">Phường/Xã</label>
+                                          <input type="name" class="form-control" name="town" value="<?php echo $row['town']; ?>" id=" Town" placeholder="Nhập phường/xã">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
+                                          <label for="ciTy">Tỉnh/Thành phố</label>
+                                          <input type="name" class="form-control" name="city" value="<?php echo $row['city']; ?>" id=" ciTy " placeholder="Nhập tỉnh/thành phố">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
+                                          <label for="District">Quận/Huyện</label>
+                                          <input type="name" class="form-control" name="district" value="<?php echo $row['district']; ?>" id="District" placeholder=" Nhập quận/huyện">
+                                      </div>
+                                  </div>
+  
+                              </div>
+                              <div class="row gutters">
+                                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                      <div class="text-right">
+                                          <button type="reset" id="submit" name="cancle" class="btn btn-secondary">Cancel</button>
+                                          <button type="submit" id="submit" name="submit" class="btn btn-primary">Update</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+        </form>
     </div>
     </section>
 
@@ -265,7 +291,8 @@
       </div>
     </footer>
     <!-- footer section -->
-
+    <script src="script.js"></script>
+           
     <!-- jQery -->
     <script src="../js/jquery-3.4.1.min.js"></script>
 
