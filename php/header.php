@@ -30,9 +30,28 @@
                         <div class="user_option-box">
                             <?php
                                 if (isset($_SESSION["username"])) {
-                                echo '<a href="./login/users_info.php" style="text-transform: none;">';
-                                echo $_SESSION["username"];
-                                echo'</a>';
+                                
+                                if ($_SESSION["admin"] =='Y') {
+                                    echo '<span style="text-transform: uppercase;">';
+                                    echo $_SESSION["username"];
+                                    echo'</span>';
+                                    echo '<a href="admin/table_user.php">
+                                            <i class="fa fa-cogs"></i>
+                                        </a>';
+                                    
+                                }
+                                else {
+                                    echo '<div class="drop_down">';
+                                    echo '<span style="text-transform: none;">';
+                                    echo $_SESSION["username"];
+                                    echo'</span>';
+
+                                    echo '<div class="dd_content">';
+                                        echo '<a href="login/users_info.php">Tài khoản của tôi</a>';
+                                        echo '<a href="login/change_pw.php">Đổi mật khẩu</a>';
+                                    echo '</div>';
+                                    echo '</div>';
+                                }
                                 echo  '<a href="./login/logout.php">
                                             <i class="fa fa-sign-out"></i>
                                             </a>';
@@ -52,7 +71,7 @@
                                 echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
                             }
 
-                        ?>
+                                ?>
                             </a>
                             <a href=""></a>
                             <i class="fa fa-search" aria-hidden="true"></i>

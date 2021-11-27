@@ -69,11 +69,8 @@
               <div class="user_option-box">
               <?php
                 if (isset($_SESSION["username"])) {
-                  require_once("login/connection.php");
-                  $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
-                  $result = mysqli_query($conn, $query);
-                  $row = mysqli_fetch_array($result);  
-                  if ($row["admin"] == 'Y') {
+                   
+                  if ($_SESSION["admin"] =='Y') {
                     echo '<span style="text-transform: uppercase;">';
                     echo $_SESSION["username"];
                     echo'</span>';
@@ -83,9 +80,16 @@
                     
                   }
                   else {
-                    echo '<a href="./login/users_info.php" style="text-transform: none;">';
-                    echo $_SESSION["username"];
-                    echo'</a>';
+                    echo '<div class="drop_down">';
+                      echo '<span style="text-transform: none;">';
+                      echo $_SESSION["username"];
+                      echo'</span>';
+
+                      echo '<div class="dd_content">';
+                        echo '<a href="login/users_info.php">Tài khoản của tôi</a>';
+                        echo '<a href="login/change_pw.php">Đổi mật khẩu</a>';
+                      echo '</div>';
+                    echo '</div>';
                   }
                   echo  '<a href="./login/logout.php">
                               <i class="fa fa-sign-out"></i>
@@ -95,9 +99,19 @@
                         <i class="fa fa-user" aria-hidden="true"></i>
                       </a>' ;
                 ?>
-                <a href="">
-                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                </a>
+                <a href="cart.php" class="nav-item nav-link active">
+                                <i class="fa fa-cart-plus"></i>
+                                <?php
+
+                                    if (isset($_SESSION['cart'])){
+                                        $count = count($_SESSION['cart']);
+                                        echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+                                    }else{
+                                        echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+                                    }
+
+                                ?>
+                            </a>
                 <a href=""></a>
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <div class="search-box">

@@ -35,6 +35,11 @@
           }else{
             //tiến hành lưu tên đăng nhập vào session để tiện xử lý sau này
             $_SESSION['username'] = $username;
+            $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+            $result = mysqli_query($conn, $query);
+            $row = mysqli_fetch_array($result);
+            $_SESSION['admin'] = $row['admin'];
+            
                     // Thực thi hành động sau khi lưu thông tin vào session
                     // ở đây mình tiến hành chuyển hướng trang web tới một trang gọi là index.php
                     header('Location: ../index.php');

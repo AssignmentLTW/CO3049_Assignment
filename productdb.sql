@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `productdb`
+-- Cơ sở dữ liệu: `productdb`
 --
 
 -- --------------------------------------------------------
@@ -31,11 +31,12 @@ CREATE TABLE `producttb` (
   `id` int(11) NOT NULL,
   `product_name` varchar(25) NOT NULL,
   `product_price` float DEFAULT NULL,
-  `product_image` varchar(100) DEFAULT NULL
+  `product_image` varchar(100) DEFAULT NULL,
+  `detail` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `producttb`
+-- Đang đổ dữ liệu cho bảng `producttb`
 --
 
 INSERT INTO `producttb` (`id`, `product_name`, `product_price`, `product_image`) VALUES
@@ -65,7 +66,7 @@ INSERT INTO `producttb` (`id`, `product_name`, `product_price`, `product_image`)
 (24, 'Laptop Lenovo Legion 5', 34990000, './images/ul8.jpg');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
@@ -75,7 +76,7 @@ ALTER TABLE `producttb`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --

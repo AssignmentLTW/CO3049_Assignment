@@ -1,12 +1,12 @@
 <?php
 
-function component($productname, $productprice, $productimg, $productid){
+function component($productname, $productprice, $productimg, $productid, $detail){
     $element = "
     
     <div class=\"col-sm-6 col-xl-3\">
         <form action=\"laptop.php\" method=\"post\">
                 <div class=\"box\">
-                <a href=\"details/details01.php\">
+                <a href=\"$detail\">
                     <div class=\"img-box\">
                     <img src=\"$productimg\" alt=\"Image1\">
                     </div>

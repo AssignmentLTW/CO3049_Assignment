@@ -57,7 +57,7 @@ if (isset($_POST['remove'])){
 </div>
 
 <div class="row px-5 py-5">
-        <div class="col-md-7">
+        <div class="col-lg-6 col-xl-6 col-md-12">
             <div class="shopping-cart">
                 <h4>Giỏ hàng của tôi</h4>
                 <hr>
@@ -85,7 +85,7 @@ if (isset($_POST['remove'])){
 
             </div>
         </div>
-        <div class="col-md-4 offset-md-1 border rounded mt-5 bg-white h-25">
+        <div class="col-lg-4 col-xl-4 col-md-10 offset-md-1 border rounded mt-5 bg-white h-25">
 
             <div class="pt-4">
                 <h6>CHI TIẾT ĐƠN HÀNG</h6>
@@ -114,7 +114,7 @@ if (isset($_POST['remove'])){
                     </div>
                 </div>
             </div>
-
+            <a href="buy/checkout.php"><button type="button" class="btn btn-primary" style="margin: 10px 0px 10px 180px; ">Thanh toán</button></a>                
         </div>
     </div>
 

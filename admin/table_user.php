@@ -68,31 +68,39 @@
               </ul>
               <div class="user_option-box">
               <?php
-                if (isset($_SESSION["username"])) {
-                  require_once("../login/connection.php");
-                  $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
-                  $result = mysqli_query($conn, $query);
-                  $row = mysqli_fetch_array($result);  
-                  if ($row["admin"] == 'Y') {
-                    echo '<span style="text-transform: uppercase;">';
-                    echo $_SESSION["username"];
-                    echo'</span>';
-                    echo '<a href="table_user.php">
-                            <i class="fa fa-cogs"></i>
-                          </a>';
-                    
-                  }
-                  echo  '<a href="../login/logout.php">
-                              <i class="fa fa-sign-out"></i>
-                            </a>';
-                } else
-                  echo '<a href="../login/login.php">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                      </a>' ;
-                ?>
-                <a href="">
-                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                </a>
+                                if (isset($_SESSION["username"])) {
+                                
+                                if ($_SESSION["admin"] =='Y') {
+                                    echo '<span style="text-transform: uppercase;">';
+                                    echo $_SESSION["username"];
+                                    echo'</span>';
+                                    echo '<a href="table_user.php">
+                                            <i class="fa fa-cogs"></i>
+                                          </a>';
+                                    
+                                }
+                                
+                                echo  '<a href="../login/logout.php">
+                                            <i class="fa fa-sign-out"></i>
+                                            </a>';
+                                } else
+                                echo '<a href="../login/login.php">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </a>' ;
+                            ?>
+                            <a href="cart.php" class="nav-item nav-link active">
+                                <i class="fa fa-cart-plus"></i>
+                                <?php
+
+                                    if (isset($_SESSION['cart'])){
+                                        $count = count($_SESSION['cart']);
+                                        echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+                                    }else{
+                                        echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+                                    }
+
+                                ?>
+                            </a>
                 <a href="">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </a>
@@ -116,6 +124,7 @@
               </div>
           </div>
       </div>
+      
     </section>
 
     <footer class="footer_section">
