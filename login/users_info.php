@@ -41,6 +41,7 @@
       $district = $_POST["district"];
       $city = $_POST["city"];
       $town = $_POST["town"];
+      $street = $_POST["street"];
       $link="";
       $allowedExts = array("jpg", "jpeg", "gif", "png");
       $nameParts = explode(".", $_FILES["file"]["name"]);
@@ -58,7 +59,7 @@
       }
 
       if (is_numeric($phone)) {
-        $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email', city='$city' ,town='$town',district='$district', avatar='$link' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+        $sql = "UPDATE users SET fullName='$fullName', phone='$phone', email='$email',street='$street', city='$city' ,town='$town',district='$district', avatar='$link' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
         $update = mysqli_query($conn, $sql);
       }
       
@@ -198,20 +199,27 @@
                                   </div>
                                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                       <div class="form-group">
+                                          <label for="Town">Địa chỉ nhà</label>
+                                          <input type="name" class="form-control" name="street" value="<?php echo $row['street']; ?>" id=" Street" placeholder="Nhập địa chỉ nhà">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
                                           <label for="Town">Phường/Xã</label>
                                           <input type="name" class="form-control" name="town" value="<?php echo $row['town']; ?>" id=" Town" placeholder="Nhập phường/xã">
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                      <div class="form-group">
+                                          <label for="District">Quận/Huyện</label>
+                                          <input type="name" class="form-control" name="district" value="<?php echo $row['district']; ?>" id="District" placeholder=" Nhập quận/huyện">
                                       </div>
                                   </div>
                                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                       <div class="form-group">
                                           <label for="ciTy">Tỉnh/Thành phố</label>
                                           <input type="name" class="form-control" name="city" value="<?php echo $row['city']; ?>" id=" ciTy " placeholder="Nhập tỉnh/thành phố">
-                                      </div>
-                                  </div>
-                                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                      <div class="form-group">
-                                          <label for="District">Quận/Huyện</label>
-                                          <input type="name" class="form-control" name="district" value="<?php echo $row['district']; ?>" id="District" placeholder=" Nhập quận/huyện">
                                       </div>
                                   </div>
   
