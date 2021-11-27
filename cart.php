@@ -99,7 +99,7 @@ if (isset($_POST['remove'])){
                                 $count  = count($_SESSION['cart']);
                                 echo "<h6>Giá ($count sản phẩm)</h6>";
                             }else{
-                                echo "<h6>Price (0 sản phẩm)</h6>";
+                                echo "<h6>Giá (0 sản phẩm)</h6>";
                             }
                         ?>
                         <h6>Phí vận chuyển</h6>

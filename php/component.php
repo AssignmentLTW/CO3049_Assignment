@@ -21,7 +21,7 @@ function component($productname, $productprice, $productimg, $productid){
                         <span> Mới </span>
                     </div>
                 </a>
-                <button type=\"submit\" class=\"btn btn-success my-3\" name=\"add\"> Thêm vào giỏ hàng <i class=\"fas fa-shopping-cart\"></i></button>
+                <button type=\"submit\" class=\"btn btn-success my-3\" name=\"add\"> Thêm vào giỏ hàng <i class=\"fa fa-cart-plus\"></i></button>
                 <input type='hidden' name='product_id' value='$productid'>
             </div>
         </form>
@@ -48,9 +48,9 @@ function cartElement($productimg, $productname, $productprice, $productid){
                             </div>
                             <div class=\"col-md-3 py-5\">
                                 <div>
-                                    <button type=\"button\" class=\"btn bg-light border rounded-circle\"><i class=\"fas fa-minus\"></i></button>
+                                    <button type=\"button\" class=\"btn bg-light border rounded-circle\"><i class=\"fa fa-minus\"></i></button>
                                     <input type=\"text\" value=\"1\" class=\"form-control w-25 d-inline\">
-                                    <button type=\"button\" class=\"btn bg-light border rounded-circle\"><i class=\"fas fa-plus\"></i></button>
+                                    <button type=\"button\" class=\"btn bg-light border rounded-circle\"><i class=\"fa fa-plus\"></i></button>
                                 </div>
                             </div>
                         </div>
