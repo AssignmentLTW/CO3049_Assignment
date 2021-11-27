@@ -60,7 +60,7 @@ class CreateDb
     }
 
     // get product from the producttb
-    public function getDatabs(){
+    public function getData(){
         $sql = "SELECT * FROM producttb";
 
         $result = mysqli_query($this->con, $sql);
@@ -69,9 +69,9 @@ class CreateDb
             return $result;
         }
     }
-    // get product from the laptopgaming
-    public function getDatagm(){
-        $sql = "SELECT * FROM laptopgaming";
+    // get product from the producttb (laptop best seller)
+    public function getDatabs(){
+        $sql = "SELECT * FROM producttb WHERE id IN(1,2,3,4,5,6,7,8)";
     
         $result = mysqli_query($this->con, $sql);
     
@@ -79,9 +79,19 @@ class CreateDb
             return $result;
         }
     }
-    // get product from the laptopgaming
+    // get product from the producttb (laptop gaming)
+    public function getDatagm(){
+        $sql = "SELECT * FROM producttb WHERE id IN(9,10,11,12,13,14,15,16)";
+    
+        $result = mysqli_query($this->con, $sql);
+    
+        if(mysqli_num_rows($result) > 0){
+            return $result;
+        }
+    }
+    // get product from the producttb (laptop ultrabook)
     public function getDataul(){
-        $sql = "SELECT * FROM laptopultra";
+        $sql = "SELECT * FROM producttb WHERE id IN(17,18,19,20,21,22,23,24)";
     
         $result = mysqli_query($this->con, $sql);
     

@@ -5,8 +5,6 @@ session_start();
 require_once ("php/CreateDb.php");
 require_once ("php/component.php");
 
-$db = new CreateDb("Productdb", "laptopgaming");
-$db = new CreateDb("Productdb", "laptopultra");
 $db = new CreateDb("Productdb", "Producttb");
 
 if (isset($_POST['remove'])){
@@ -61,16 +59,16 @@ if (isset($_POST['remove'])){
 <div class="row px-5 py-5">
         <div class="col-md-7">
             <div class="shopping-cart">
-                <h6>Giỏ hàng của tôi</h6>
+                <h4>Giỏ hàng của tôi</h4>
                 <hr>
 
                 <?php
 
                 $total = 0;
-                    if (isset($_SESSION['cart'])){
+                    if (isset($_SESSION['cart'])&& !empty($_SESSION['cart'])){
                         $product_id = array_column($_SESSION['cart'], 'product_id');
 
-                        $result = $db->getDatabs();
+                        $result = $db->getData();
                         while ($row = mysqli_fetch_assoc($result)){
                             foreach ($product_id as $id){
                                 if ($row['id'] == $id){
@@ -80,7 +78,7 @@ if (isset($_POST['remove'])){
                             }
                         }
                     }else{
-                        echo "<h5>Cart is Empty</h5>";
+                        echo "<h5>Giỏ hàng trống</h5>";
                     }
 
                 ?>
@@ -107,12 +105,12 @@ if (isset($_POST['remove'])){
                         <h6>Thành tiền</h6>
                     </div>
                     <div class="col-md-6">
-                        <h6>$<?php echo $total; ?></h6>
+                        <h6><?php echo $total; ?> ₫</h6>
                         <h6 class="text-success">FREE</h6>
                         <hr>
-                        <h6>$<?php
+                        <h6><?php
                             echo $total;
-                            ?></h6>
+                            ?> ₫</h6>
                     </div>
                 </div>
             </div>

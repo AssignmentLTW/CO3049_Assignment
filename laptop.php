@@ -7,8 +7,6 @@ require_once ('./php/component.php');
 
 
 // create instance of Createdb class
-$database = new CreateDb("Productdb", "laptopultra");
-$database = new CreateDb("Productdb", "laptopgaming");
 $database = new CreateDb("Productdb", "Producttb");
 
 if (isset($_POST['add'])){
