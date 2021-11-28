@@ -110,6 +110,7 @@ if (isset($_POST['remove'])){
                         <hr>
                         <h6><?php
                             echo $total;
+                            $_SESSION['total'] = $total;
                             ?> ₫</h6>
                     </div>
                 </div>

@@ -26,7 +26,40 @@ session_start();
     <!-- responsive style -->
     <link href="../css/responsive.css" rel="stylesheet" />
 </head>
+<?php
+    require_once ('../php/CreateDb.php');
+    $database = new CreateDb("Productdb", "Producttb");
+    if (isset($_POST['add'])){
 
+        if(isset($_SESSION['cart'])){
+    
+            $item_array_id = array_column($_SESSION['cart'], "product_id");
+    
+            if(in_array($_POST['product_id'], $item_array_id)){
+                echo "<script>alert('Sản phẩm đã có trong giỏ hàng..!')</script>";
+                //echo "<script>window.location = 'de'</script>";
+            }else{
+    
+                $count = count($_SESSION['cart']);
+                $item_array = array(
+                    'product_id' => $_POST['product_id']
+                );
+    
+                $_SESSION['cart'][$count] = $item_array;
+            }
+    
+        }else{
+    
+            $item_array = array(
+                    'product_id' => $_POST['product_id']
+            );
+    
+            // Create new session variable
+            $_SESSION['cart'][0] = $item_array;
+            //print_r($_SESSION['cart']);
+        }
+    }
+?>
 <body class="sub_page">
     <div class="hero_area">
         <!-- header section strats -->
@@ -68,9 +101,17 @@ session_start();
                     echo '<span style="text-transform: uppercase;">';
                     echo $_SESSION["username"];
                     echo'</span>';
-                    echo '<a href="../admin/table_user.php">
-                            <i class="fa fa-cogs"></i>
-                          </a>';
+                    echo '<div class="drop_down" style=" min-width:50px; margin-left: 20px;">';
+                      echo '<span style="text-transform: none;">';
+                      echo '<i class="fa fa-cogs"></i>';
+                      echo'</span>';
+
+                      echo '<div class="dd_content">';
+                        echo '<a href="../admin/table_user.php">Thành viên</a>';
+                        echo '<a href="../admin/table_product.php">Xem sản phẩm</a>';
+                        echo '<a href="../admin/edit_add.php">Thêm, sửa sản phẩm</a>';
+                      echo '</div>';
+                    echo '</div>';
                     
                   }
                   else {
@@ -109,12 +150,14 @@ session_start();
                                 ?>
                             </a>
                             <a href=""></a>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <div class="search-box">
-                                <form action="">
-                                    <input type="text" placeholder="" />
-                                    <input type="submit" value="Search" />
-                                </form>
+                            <div class="search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <div class="search-box">
+                                    <form action="../search.php" method="POST">
+                                        <input type="text" name="search" placeholder="Search By Name" value="" />
+                                        <button class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -168,8 +211,11 @@ session_start();
                     <p>Bảo hành : 12 Tháng</p>
                     <p>Tình trạng : Mới 100%</p>
                     <h3>Giá: 11,990,000₫</h3>
-                    <button class="btn btn-outline-primary btn-block" type="button">Thêm vào giỏ hàng</button>
-                    <button class="btn btn-success btn-block" type="button">Mua ngay</button>
+                    <form method="POST">
+                        <button class="btn btn-outline-primary btn-block" type="submit" name="add">Thêm vào giỏ hàng</button>
+                        <input type='hidden' name='product_id' value="1">            
+                    </form>
+                    <a href="../cart.php"><button class="btn btn-success btn-block" type="button" style="margin-top:5px">Mua ngay</button></a>
                 </div>
 
                 <div class=" detail col">

@@ -75,9 +75,17 @@
                     echo '<span style="text-transform: uppercase;">';
                     echo $_SESSION["username"];
                     echo'</span>';
-                    echo '<a href="admin/table_user.php">
-                            <i class="fa fa-cogs"></i>
-                          </a>';
+                    echo '<div class="drop_down" style=" min-width:50px; margin-left: 20px;">';
+                      echo '<span style="text-transform: none;">';
+                      echo '<i class="fa fa-cogs"></i>';
+                      echo'</span>';
+
+                      echo '<div class="dd_content">';
+                        echo '<a href="admin/table_user.php">Thành viên</a>';
+                        echo '<a href="admin/table_product.php">Xem sản phẩm</a>';
+                        echo '<a href="admin/edit_add.php">Thêm, sửa sản phẩm</a>';
+                      echo '</div>';
+                    echo '</div>';
                     
                   }
                   else {
@@ -114,13 +122,15 @@
                                 ?>
                             </a>
                 <a href=""></a>
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <div class="search-box">
-                  <form action="">
-                      <input type="text" placeholder="" />
-                      <input type="submit" value="Search" />
-                  </form>
-                </div>
+                <div class="search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <div class="search-box">
+                                    <form action="search.php" method="POST">
+                                        <input type="text" name="search" placeholder="Search By Name" value="" />
+                                        <button class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
+                            </div>
               </div>
             </div>
           </nav>

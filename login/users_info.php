@@ -141,9 +141,16 @@
 
                                 ?>
                             </a>
-                <a href="">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
+                            <a href=""></a>
+                            <div class="search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <div class="search-box">
+                                    <form action="../search.php" method="POST">
+                                        <input type="text" name="search" placeholder="Search By Name" value="" />
+                                        <button class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
+                            </div>
               </div>
             </div>
           </nav>

@@ -1,5 +1,7 @@
 <?php
     session_start();
+    if ($_SESSION["admin"] != 'Y')
+      header("Location: ../index.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,15 +72,22 @@
               <?php
                                 if (isset($_SESSION["username"])) {
                                 
-                                if ($_SESSION["admin"] =='Y') {
+                                  if ($_SESSION["admin"] =='Y') {
                                     echo '<span style="text-transform: uppercase;">';
                                     echo $_SESSION["username"];
                                     echo'</span>';
-                                    echo '<a href="table_user.php">
-                                            <i class="fa fa-cogs"></i>
-                                          </a>';
-                                    
-                                }
+                                    echo '<div class="drop_down" style=" min-width:50px; margin-left: 20px;">';
+                                      echo '<span style="text-transform: none;">';
+                                      echo '<i class="fa fa-cogs"></i>';
+                                      echo'</span>';
+                
+                                      echo '<div class="dd_content">';
+                                        echo '<a href="table_user.php">Thành viên</a>';
+                                        echo '<a href="table_product.php">Xem sản phẩm</a>';
+                                        echo '<a href="edit_add.php">Thêm, sửa sản phẩm</a>';
+                                      echo '</div>';
+                                    echo '</div>';
+                                  }
                                 
                                 echo  '<a href="../login/logout.php">
                                             <i class="fa fa-sign-out"></i>
@@ -88,7 +97,7 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </a>' ;
                             ?>
-                            <a href="cart.php" class="nav-item nav-link active">
+                            <a href="../cart.php" class="nav-item nav-link active">
                                 <i class="fa fa-cart-plus"></i>
                                 <?php
 

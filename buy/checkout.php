@@ -47,6 +47,7 @@ if (isset($_SESSION['username'])) {
 if (isset($_POST['buy'])) {
   if (is_numeric($_POST['phone'])&&filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     echo'<script>alert("Đặt hàng thành công");</script>';
+    echo "<script>window.location = '../index.php'</script>";
     unset ($_SESSION['cart']);
   }
 }
@@ -214,6 +215,13 @@ if (isset($_POST['buy'])) {
       <label class="custom-control-label" for="debit">Chuyển khoản</label>
     </div>
 
+  </div>
+  <hr class="mb-4">
+  <h4 class="mb-3" style="color: #007bff;">Tổng số tiền phải thanh toán</h4>
+  <div class="d-block my-3">
+    <?php
+        echo $_SESSION['total'];
+    ?> ₫</h6>
   </div>
   <hr class="mb-4">
   <button class="btn btn-primary btn-lg btn-block" id="b3" name="buy" type="submit">Đặt hàng</button>

@@ -2,31 +2,9 @@
   .footer_container {
     border-radius: 250px 0 0 0;
   }
-  .search-box {
-    width: 270px;
-    left: 79.5%;
-  }
-  .search-box input[type="text"] {
-    width: 140px;
-    margin-left: 15px;
-  }
-  .search-box input[type="button"] {
-    margin-right: 12px;
-  }
 }
 
 @media (max-width: 1120px) {
-  .search-box {
-    width: 270px;
-    left: 74.5%;
-  }
-  .search-box input[type="text"] {
-    width: 140px;
-    margin-left: 15px;
-  }
-  .search-box input[type="button"] {
-    margin-right: 12px;
-  }
 }
 
 @media (max-width: 992px) {
@@ -58,18 +36,6 @@
   .slider_section {
     padding: 75px 0;
   }
-  .search-box {
-    width: 270px;
-    top: 275px;
-    left: 28%;
-  }
-  .search-box input[type="text"] {
-    width: 140px;
-    margin-left: 15px;
-  }
-  .search-box input[type="button"] {
-    margin-right: 12px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -85,18 +51,6 @@
   .contact_section .form_container {
     margin-bottom: 45px;
   }
-  .search-box {
-    width: 270px;
-    top: 275px;
-    left: 20%;
-  }
-  .search-box input[type="text"] {
-    width: 140px;
-    margin-left: 15px;
-  }
-  .search-box input[type="button"] {
-    margin-right: 12px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -108,21 +62,6 @@
     top: unset;
     bottom: -15px;
     transform: none;
-  }
-  .search-box {
-    width: 270px;
-    top: 275px;
-    left: 20%;
-  }
-  .search-box::before {
-    display: none;
-  }
-  .search-box input[type="text"] {
-    width: 140px;
-    margin-left: 15px;
-  }
-  .search-box input[type="button"] {
-    margin-right: 12px;
   }
 }
 

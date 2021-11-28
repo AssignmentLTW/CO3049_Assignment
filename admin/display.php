@@ -19,9 +19,11 @@
               echo '<th scope="col">email</th>';
               echo '<th scope="col">Họ tên</th>';
               echo '<th scope="col">SĐT</th>';
+              echo '<th scope="col">Địa chỉ nhà</th>';
               echo '<th scope="col">Phường/Xã</th>';
               echo '<th scope="col">Quận/Huyện</th>';
               echo '<th scope="col">Tỉnh/Thành phố</th>';
+              echo '<th scope="col"></th>';
             echo '</tr>';
             echo '</thead>';
           $number = 1;
@@ -33,6 +35,7 @@
                 echo '<td>' . $row["email"] . '</td>';
                 echo '<td>' . $row["fullName"] . '</td>';
                 echo '<td>' . $row["phone"] . '</td>';
+                echo '<td>' . $row["street"] . '</td>';
                 echo '<td>' . $row["town"] . '</td>';
                 echo '<td>' . $row["district"] . '</td>';
                 echo '<td>' . $row["city"] . '</td>';
