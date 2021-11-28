@@ -16,4 +16,4 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `users` (`username`, `password`, `email`, `fullName`, `phone`, `town`, `city`, `district`,`admin`) VALUES
-('nguyentran', 'a', 'vannguyen10a3@gmail.com', NULL, NULL, NULL, NULL, NULL,'Y');
+('ductam', '1111', 'tam@gmail.com', NULL, NULL, NULL, NULL, NULL,'Y');
