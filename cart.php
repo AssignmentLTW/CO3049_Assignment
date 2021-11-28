@@ -72,7 +72,7 @@ if (isset($_POST['remove'])){
                         while ($row = mysqli_fetch_assoc($result)){
                             foreach ($product_id as $id){
                                 if ($row['id'] == $id){
-                                    cartElement($row['product_image'], $row['product_name'],$row['product_price'], $row['id']);
+                                    cartElement($row['product_image'], $row['product_name'],$row['product_price'], $row['id'], $row['detail']);
                                     $total = $total + (int)$row['product_price'];
                                 }
                             }
@@ -93,7 +93,7 @@ if (isset($_POST['remove'])){
                 <div class="row price-details">
                     <div class="col-md-6">
                         <?php
-                            if (isset($_SESSION['cart'])){
+                            if (isset($_SESSION['cart'])&& !empty($_SESSION['cart'])){
                                 $count  = count($_SESSION['cart']);
                                 echo "<h6>Giá ($count sản phẩm)</h6>";
                             }else{

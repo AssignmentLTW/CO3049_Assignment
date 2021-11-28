@@ -30,14 +30,16 @@ function component($productname, $productprice, $productimg, $productid, $detail
     echo $element;
 }
 
-function cartElement($productimg, $productname, $productprice, $productid){
+function cartElement($productimg, $productname, $productprice, $productid, $detail){
     $element = "
     
     <form action=\"cart.php?action=remove&id=$productid\" method=\"post\" class=\"cart-items\">
                     <div class=\"border rounded\">
                         <div class=\"row bg-white\">
                             <div class=\"col-md-3 pl-0\">
+                            <a href=\"$detail\">
                                 <img src=$productimg alt=\"Image1\" class=\"img-fluid\">
+                            </a>
                             </div>
                             <div class=\"col-md-6\">
                                 <h5 class=\"pt-2\">$productname</h5>

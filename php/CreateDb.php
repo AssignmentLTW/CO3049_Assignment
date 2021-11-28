@@ -44,11 +44,12 @@ class CreateDb
 
             // sql to create new table
             $sql = " CREATE TABLE IF NOT EXISTS $tablename
-                            (id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                            (id INT(11) UNIQUE NOT NULL AUTO_INCREMENT PRIMARY KEY,
                              product_name VARCHAR (25) NOT NULL,
-                             product_price FLOAT,
-                             product_image VARCHAR (100)
-                            );";
+                             product_price FLOAT DEFAULT NULL,
+                             product_image VARCHAR (100) DEFAULT NULL,
+                             detail varchar(300) NOT NULL
+                            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
 
             if (!mysqli_query($this->con, $sql)){
                 echo "Error creating table : " . mysqli_error($this->con);

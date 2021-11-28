@@ -64,11 +64,11 @@
                                 <i class="fa fa-cart-plus"></i>
                                 <?php
 
-                            if (isset($_SESSION['cart'])){
+                            if (isset($_SESSION['cart'])&& !empty($_SESSION['cart'])){
                                 $count = count($_SESSION['cart']);
                                 echo "<span id=\"cart_count\" class=\"text-black bg-light\">$count</span>";
                             }else{
-                                echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+                                echo "<span id=\"cart_count\" class=\"text-black bg-light\">0</span>";
                             }
 
                                 ?>
@@ -76,9 +76,9 @@
                             <a href=""></a>
                             <i class="fa fa-search" aria-hidden="true"></i>
                             <div class="search-box">
-                                <form action="">
-                                    <input type="text" placeholder="" />
-                                    <input type="submit" value="Search" />
+                                <form action="search.php" method="POST">
+                                    <input type="text" name="search" placeholder="Search By Name" value="" />
+                                    <button class="btn btn-primary">Search</button>
                                 </form>
                             </div>
                         </div>
