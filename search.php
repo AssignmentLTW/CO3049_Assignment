@@ -60,7 +60,7 @@ if (isset($_POST['search'])) {
     <section class="layout_padding">
       <div class="container">
         <h2 style="text-align: center; padding-bottom: 20px; font-weight:bold">
-        Kết quả tìm kiếm</h2>  
+        Kết quả tìm kiếm <?php echo '"'. $searchKey. '"'; ?></h2>  
         <div class="row">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="table">
                 <table class="table">

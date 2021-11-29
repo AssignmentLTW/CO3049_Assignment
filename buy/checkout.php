@@ -95,7 +95,26 @@ if (isset($_POST['buy'])) {
               <div class="user_option-box">
               <?php
                 if (isset($_SESSION["username"])) {
-                  echo '<div class="drop_down">';
+                   
+                  if ($_SESSION["admin"] =='Y') {
+                    echo '<span style="text-transform: uppercase;">';
+                    echo $_SESSION["username"];
+                    echo'</span>';
+                    echo '<div class="drop_down" style=" min-width:50px; margin-left: 20px;">';
+                      echo '<span style="text-transform: none;">';
+                      echo '<i class="fa fa-cogs"></i>';
+                      echo'</span>';
+
+                      echo '<div class="dd_content">';
+                        echo '<a href="../admin/table_user.php">Thành viên</a>';
+                        echo '<a href="../admin/table_product.php">Xem sản phẩm</a>';
+                        echo '<a href="../admin/edit_add.php">Thêm, sửa sản phẩm</a>';
+                      echo '</div>';
+                    echo '</div>';
+                    
+                  }
+                  else {
+                    echo '<div class="drop_down">';
                       echo '<span style="text-transform: none;">';
                       echo $_SESSION["username"];
                       echo'</span>';
@@ -105,9 +124,10 @@ if (isset($_POST['buy'])) {
                         echo '<a href="../login/change_pw.php">Đổi mật khẩu</a>';
                       echo '</div>';
                     echo '</div>';
+                  }
                   echo  '<a href="../login/logout.php">
-                    <i class="fa fa-sign-out"></i>
-                  </a>';
+                              <i class="fa fa-sign-out"></i>
+                            </a>';
                 } else
                   echo '<a href="../login/login.php">
                         <i class="fa fa-user" aria-hidden="true"></i>
@@ -126,9 +146,16 @@ if (isset($_POST['buy'])) {
 
                                 ?>
                             </a>
-                <a href="">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
+                            <a href=""></a>
+                            <div class="search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <div class="search-box">
+                                    <form action="../search.php" method="POST">
+                                        <input type="text" name="search" placeholder="Search By Name" value="" />
+                                        <button class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
+                            </div>
               </div>
             </div>
           </nav>
