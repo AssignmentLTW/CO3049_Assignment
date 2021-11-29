@@ -1,5 +1,7 @@
 <?php
-  session_start();
+    session_start();
+    if ($_SESSION["admin"] != 'Y')
+      header("Location: ../index.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,52 +14,28 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+ 
     <title>Teamups</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <!--owl slider stylesheet -->
 
     <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-
+    <link href="../css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
   </head>
-  <?php
-    $db = mysqli_connect('localhost','root','','comment');
-    $cmt = mysqli_query($db, "SELECT * FROM cmt");
-    if (isset($_POST["send"])) {
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $phone = $_POST['phone'];
-      $comment = $_POST['comment'];
-
-      $sql = "INSERT INTO cmt(
-        name,
-        email,
-        phone,
-        comment
-        ) VALUES (
-        '$name',
-        '$email',
-        '$phone',
-        '$comment'
-        )";  
-        mysqli_query($db, $sql);
-    }
-  ?>
-
   <body class="sub_page">
     <div class="hero_area">
       <!-- header section strats -->
       <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="../index.php">
               <span> Teamups </span>
             </a>
 
@@ -76,63 +54,51 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">Trang chủ </a>
+                  <a class="nav-link" href="../index.php">Trang chủ </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="laptop.php"> Laptops </a>
+                  <a class="nav-link" href="../laptop.php"> Laptops </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.php"> Giới thiệu </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="contact.php"
-                    >Liên hệ <span class="sr-only">(current)</span>
+                <li class="nav-item ">
+                  <a class="nav-link" href="../about.php">
+                    Giới thiệu 
                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../contact.php">Liên hệ</a>
                 </li>
               </ul>
               <div class="user_option-box">
               <?php
-                if (isset($_SESSION["username"])) {
-                   
-                  if ($_SESSION["admin"] =='Y') {
-                    echo '<span style="text-transform: uppercase;">';
-                    echo $_SESSION["username"];
-                    echo'</span>';
-                    echo '<div class="drop_down" style=" min-width:50px; margin-left: 20px;">';
-                      echo '<span style="text-transform: none;">';
-                      echo '<i class="fa fa-cogs"></i>';
-                      echo'</span>';
-
-                      echo '<div class="dd_content">';
-                        echo '<a href="admin/table_user.php">Thành viên</a>';
-                        echo '<a href="admin/table_product.php">Xem sản phẩm</a>';
-                        echo '<a href="admin/edit_add.php">Thêm, sửa sản phẩm</a>';
-                        echo '<a href="admin/comment.php">Xem bình luận</a>';
-                      echo '</div>';
-                    echo '</div>';
-                    
-                  }
-                  else {
-                    echo '<div class="drop_down">';
-                      echo '<span style="text-transform: none;">';
-                      echo $_SESSION["username"];
-                      echo'</span>';
-
-                      echo '<div class="dd_content">';
-                        echo '<a href="login/users_info.php">Tài khoản của tôi</a>';
-                        echo '<a href="login/change_pw.php">Đổi mật khẩu</a>';
-                      echo '</div>';
-                    echo '</div>';
-                  }
-                  echo  '<a href="./login/logout.php">
-                              <i class="fa fa-sign-out"></i>
-                            </a>';
-                } else
-                  echo '<a href="./login/login.php">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                      </a>' ;
-                ?>
-                <a href="cart.php" class="nav-item nav-link active">
+                                if (isset($_SESSION["username"])) {
+                                
+                                  if ($_SESSION["admin"] =='Y') {
+                                    echo '<span style="text-transform: uppercase;">';
+                                    echo $_SESSION["username"];
+                                    echo'</span>';
+                                    echo '<div class="drop_down" style=" min-width:50px; margin-left: 20px;">';
+                                      echo '<span style="text-transform: none;">';
+                                      echo '<i class="fa fa-cogs"></i>';
+                                      echo'</span>';
+                
+                                      echo '<div class="dd_content">';
+                                        echo '<a href="table_user.php">Thành viên</a>';
+                                        echo '<a href="table_product.php">Xem sản phẩm</a>';
+                                        echo '<a href="edit_add.php">Thêm, sửa sản phẩm</a>';
+                                        echo '<a href="comment.php">Xem bình luận</a>';
+                                      echo '</div>';
+                                    echo '</div>';
+                                  }
+                                
+                                echo  '<a href="../login/logout.php">
+                                            <i class="fa fa-sign-out"></i>
+                                            </a>';
+                                } else
+                                echo '<a href="../login/login.php">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </a>' ;
+                            ?>
+                            <a href="../cart.php" class="nav-item nav-link active">
                                 <i class="fa fa-cart-plus"></i>
                                 <?php
 
@@ -145,11 +111,11 @@
 
                                 ?>
                             </a>
-                <a href=""></a>
-                <div class="search">
+                            <a href=""></a>
+                            <div class="search">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                                 <div class="search-box">
-                                    <form action="search.php" method="POST">
+                                    <form action="../search.php" method="POST">
                                         <input type="text" name="search" placeholder="Search By Name" value="" />
                                         <button class="btn btn-primary">Search</button>
                                     </form>
@@ -163,52 +129,46 @@
       <!-- end header section -->
     </div>
 
-    <!-- contact section -->
-
-    <section class="contact_section layout_padding">
+    <section class="layout_padding">
       <div class="container">
+        <h2 style="text-align: center; padding-bottom: 20px; font-weight:bold">
+        Bình luận của khách hàng</h2>  
         <div class="row">
-          <div class="col-md-6">
-            <div class="form_container">
-              <div class="heading_container">
-                <h2>Liên hệ với chúng tôi</h2>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="table">
+              <?php
+                $db = mysqli_connect('localhost','root','','comment');
+                $cmt = mysqli_query($db, "SELECT * FROM cmt");
+
+
+                echo '<table class="table table-striped">';
+                    echo '<thead>';
+                    echo '<tr>';
+                    echo '<th scope="col">Họ tên</th>';
+                    echo '<th scope="col">Email</th>';
+                    echo '<th scope="col">Số điện thoại</th>';
+                    echo '<th scope="col">Bình luận</th>';
+                    echo '</thead>';
+                while ($row = mysqli_fetch_array($cmt)) {
+                        echo '<tbody>';
+                        echo '<td scope="row">' . $row["name"] . '</td>';
+                        echo '<td>' . $row["email"] . '</td>';
+                        echo '<td>' . $row["phone"] . '</td>';
+                        echo '<td>' . $row["comment"] . '</td>';
+                        
+                    echo '</tbody>';
+                    }
+                echo '</table>';
+            
+            
+            ?>
+
+
               </div>
-              <form method="POST">
-                <div>
-                  <input type="text" placeholder="Họ tên " name="name" />
-                </div>
-                <div>
-                  <input type="email" placeholder="Email" name="email"/>
-                </div>
-                <div>
-                  <input type="text" placeholder="Số điện thoại" name="phone" />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    class="message-box"
-                    placeholder="Bình luận"
-                    name="comment"
-                  />
-                </div>
-                <div class="d-flex" style="padding-bottom: 30px">
-                  <button type="submit" name="send">GỬI</button>
-                </div>
-              </form>
-            </div>
           </div>
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/contact.jpg" alt="" />
-            </div>
-          </div>
-        </div>
       </div>
+      
     </section>
 
-    <!-- end contact section -->
-
-    <!-- footer section -->
     <footer class="footer_section">
       <div class="container">
         <div class="row">
@@ -265,17 +225,11 @@
         
       </div>
     </footer>
-    <!-- footer section -->
-
     <!-- jQery -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.js"></script>
-
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
     <!-- custom js -->
-    <script src="js/script.js"></script>
-    
+    <script src="../js/script.js"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->

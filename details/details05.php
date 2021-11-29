@@ -122,6 +122,7 @@ session_start();
                       echo '<div class="dd_content">';
                         echo '<a href="../login/users_info.php">Tài khoản của tôi</a>';
                         echo '<a href="../login/change_pw.php">Đổi mật khẩu</a>';
+                        echo '<a href="../admin/comment.php">Xem bình luận</a>';
                       echo '</div>';
                     echo '</div>';
                   }

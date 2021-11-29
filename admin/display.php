@@ -40,7 +40,7 @@
                 echo '<td>' . $row["district"] . '</td>';
                 echo '<td>' . $row["city"] . '</td>';
                 echo '<td>
-                      <form action="" method="POST" id="form">
+                      <form  method="POST" id="form">
                         <button type="submit" class="btn btn-primary" name="delete" value =' . $number . '>Delete</button>
                       </form>
                       </td>';

@@ -33,7 +33,9 @@
 <?php
 
   require_once("connection.php");
-
+  $query = "SELECT * FROM users WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
+  $result = mysqli_query($conn, $query);
+  $row = mysqli_fetch_array($result);
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $fullName = $_POST["fullName"];
       $phone = $_POST["phone"];
@@ -57,7 +59,7 @@
             "avatar/" . $_FILES["file"]["name"]);
           $link = "avatar/" .$_FILES["file"]["name"];
       }
-
+      if ($link=='') $link = $row['avatar'];
       if (is_numeric($phone)) {
         $sql = "UPDATE users SET fullName='$fullName', avatar='$link', phone='$phone', email='$email',street='$street', city='$city' ,town='$town',district='$district' WHERE username ='" . $_SESSION['username'] . "' LIMIT 1";
         $update = mysqli_query($conn, $sql);

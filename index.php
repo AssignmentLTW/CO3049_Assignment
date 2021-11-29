@@ -99,6 +99,7 @@
                         echo '<a href="admin/table_user.php">Thành viên</a>';
                         echo '<a href="admin/table_product.php">Xem sản phẩm</a>';
                         echo '<a href="admin/edit_add.php">Thêm, sửa sản phẩm</a>';
+                        echo '<a href="admin/comment.php">Xem bình luận</a>';
                       echo '</div>';
                     echo '</div>';
                     
@@ -499,50 +500,7 @@
 
     <!-- end feature section -->
 
-    <!-- contact section -->
-
-    <section class="contact_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form_container">
-              <div class="heading_container">
-                <h2>Liên hệ với chúng tôi</h2>
-              </div>
-              <form action="">
-                <div>
-                  <input type="text" placeholder="Họ tên " />
-                </div>
-                <div>
-                  <input type="email" placeholder="Email" />
-                </div>
-                <div>
-                  <input type="text" placeholder="Số điện thoại" />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    class="message-box"
-                    placeholder="Bình luận"
-                  />
-                </div>
-                <div class="d-flex" style="padding-bottom: 30px">
-                  <button>GỬI</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/contact.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end contact section -->
-
+    
     
 
     <!-- footer section -->

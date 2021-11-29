@@ -110,6 +110,7 @@ session_start();
                         echo '<a href="../admin/table_user.php">Thành viên</a>';
                         echo '<a href="../admin/table_product.php">Xem sản phẩm</a>';
                         echo '<a href="../admin/edit_add.php">Thêm, sửa sản phẩm</a>';
+                        echo '<a href="../admin/comment.php">Xem bình luận</a>';
                       echo '</div>';
                     echo '</div>';
                     
