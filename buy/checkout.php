@@ -1,7 +1,7 @@
 <?php
   session_start();
   if (!isset($_SESSION["username"]))
-    header("Location: Login.php");
+    header("Location: ../login/login.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -109,6 +109,7 @@ if (isset($_POST['buy'])) {
                         echo '<a href="../admin/table_user.php">Thành viên</a>';
                         echo '<a href="../admin/table_product.php">Xem sản phẩm</a>';
                         echo '<a href="../admin/edit_add.php">Thêm, sửa sản phẩm</a>';
+                        echo '<a href="../admin/comment.php">Xem bình luận</a>';
                       echo '</div>';
                     echo '</div>';
                     
